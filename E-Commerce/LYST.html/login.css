@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .main1 {
+    margin-top: 100px;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .main1 .left {
+    position: relative;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .left .top {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    height: 40px;
+  }
+  .left .p1 {
+    background: rgba(255, 255, 255, 0.418);
+    height: 20px;
+    width: 50%;
+    padding: 8px;
+    text-align: center;
+  }
+  .left .p2 {
+    background: rgb(0, 0, 0);
+    height: 20px;
+    width: 60%;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+  }
+  .left h2 {
+    text-align: center;
+  }
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+  .box1 input {
+    padding: 9px;
+    border: 1px solid rgb(148, 148, 148);
+    margin-bottom: 20px;
+  }
+  .sign {
+    padding: 15px 8px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .sign:hover {
+    color: #000;
+    background: #fff;
+  }
+  .or {
+    text-align: center;
+    line-height: 0;
+  }
+  .fb {
+    padding: 15px 8px;
+    background: #3d5c98;
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .fb:hover {
+    background: #486bb1;
+  }
+  .go {
+    padding: 15px 8px;
+    cursor: pointer;
+    background: #fff;
+    font-size: 18px;
+    border: 1px solid rgb(133, 133, 133);
+  }
+  .right {
+    background: #b691f4;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box2 {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    height: 150px;
+    width: 80%;
+    line-height: 1;
+  }

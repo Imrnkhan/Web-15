@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        button{
+            padding: 5px;
+            margin: 10px;
+            color: white;
+            border: 0px;
+            font-weight: bold;
+        }
+/* 
+        button:nth-child(1){
+            background-color: blue;
+        }
+        button:nth-child(2){
+            background-color: red;
+        }
+        button:nth-child(3){
+            background-color: teal;
+        }
+        button:nth-child(4){
+            background-color: green;
+        }
+        button:nth-child(5){
+            background-color: yellow;
+        }
+        button:nth-child(6){
+            background-color: orange;
+        }
+         */
+    </style>
+  </head>
+  <body>
+    <!-- <button>primary</button>
+    <button>secondary</button>
+    <button>danger</button>
+    <button>warning</button>
+    <button>info</button>
+    <button>base</button> -->
+  </body>
+</html>
+<script>
+  //   var btn1 = document.createElement("button");
+  //   var btn2 = document.createElement("button");
+  //   var btn3 = document.createElement("button");
+  //   var btn4 = document.createElement("button");
+  //   var btn5 = document.createElement("button");
+  //   var btn6 = document.createElement("button");
+
+  // btn1.textContent="primary";
+  // btn2.textContent="succes";
+  // btn3.textContent="Dnager";
+  // btn4.textContent="warning";
+  // btn5.textContent="Secondary";
+  // btn6.textContent="info";
+
+  // btn1.style.backgroundColor="blue";
+  // btn2.style.backgroundColor="red";
+  // btn3.style.backgroundColor="teal";
+  // btn4.style.backgroundColor="black";
+  // btn5.style.backgroundColor="green";
+  // btn6.style.backgroundColor="yellow";
+
+  // document.querySelector("body").append(btn1, btn2, btn3, btn4, btn5, btn6);
+
+  var buttons = [
+    { name: "primary", bgColor: "blue" },
+    { name: "secondary", bgColor: "green" },
+    { name: "succes", bgColor: "red" },
+    { name: "danger", bgColor: "yellow" },
+    { name: "warning", bgColor: "grey" },
+    { name: "info", bgColor: "cyan" },
+  ];
+
+  buttons.map(function (element) {
+    var btn = document.createElement("button");
+    btn.textContent = element.name;
+    btn.style.backgroundColor = element.bgColor;
+    document.querySelector("body").append(btn);
+  });
+</script>

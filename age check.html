@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Values</title>
+</head>
+<body>
+	<input type="number" name="year" id="year">
+	<hr>
+    <p id="outc"></p>
+	<button onclick="validat()">Validate</button>
+	<script type="text/javascript">
+		function validat(){
+            var age= 2021-Number(document.getElementById('year').value);
+            if(age>18)
+            document.getElementById('outc').innerHTML=" You can drive in India!";
+            else if(age==18)
+            document.getElementById('outc').innerHTML="You are just old enough to drive in India!";
+            else
+            document.getElementById('outc').innerHTML="You can't drive in India";
+			// Show the alert of the filled name
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .throw {
+        width: 200px;
+        height: 40px;
+        margin: auto;
+        padding-top: 15%;
+        padding-bottom: 30px;
+      }
+      #throwDice {
+        background-color: blue;
+        color: gray;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+      }
+      #diceNumber {
+        width: 50px;
+        height: 50px;
+        border: 1px solid gray;
+        margin: auto;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="throw">
+      <button id="throwDice" onclick="throwDice()">throw dice</button>
+    </div>
+    <div id="diceNumber"></div>
+  </body>
+</html>
+<script>
+  function throwDice() {
+    document.getElementById("diceNumber").innerHTML = "random";
+    var diceNumber = document.getElementById("diceNumber");
+    var diceValue = Math.floor(Math.random() * 6) + 1;
+    diceNumber.innerHTML = diceValue;
+    if (diceValue == "6") {
+      diceNumber.style.color = "green";
+    } else if (diceValue == "1") {
+      diceNumber.style.color = "red";
+    } else {
+      diceNumber.style.color = "black";
+    }
+  }
+</script>

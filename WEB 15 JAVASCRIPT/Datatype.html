@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 80%;
+            margin: auto;
+            margin-top: 3%;
+            padding: 2%;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #main button{
+            width:200px;
+            height:30px;
+            cursor: pointer;
+            margin-bottom: 8px;
+        }
+        #main>div{
+            display: flex;
+        }
+        #main>div>div:nth-child(2){
+            margin: 20px;
+            font-size: 15px;
+            color: gray;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+   <div id="main">
+    <div>
+        <div class="object"><button id="object" onclick="object()">Objects</button></div>
+        <div id="objectPoints"></div>
+    </div>
+    <div>
+        <div class="arrays"><button id="arrays" onclick="arrays()" >Arrays</button></div>
+        <div id="arraysPoints"></div>
+    </div>
+    <div>
+        <div class="function"><button id="functions" onclick="functions()">Functions</button></div>
+        <div id="functionsPoints"></div>
+    </div>
+    <div>
+        <div class="string"><button id="string" onclick="string()">Strings</button></div>
+        <div id="stringPoints"></div>
+    </div>
+    <div>
+        <div class="number"><button id="number" onclick="number()">Numbers</button></div>
+        <div id="numberPoints"></div>
+    </div>
+    <div>
+        <div class="null"><button id="Null" onclick="Null()">Null</button></div>
+        <div id="nullPoints"></div>
+    </div>
+    <div>
+        <div class="undefined"><button id="Undefined" onclick="Undefined()">Undefined</button></div>
+        <div id="UndefinedPoints"></div>
+    </div>
+   </div>
+</body>
+</html>
+<script>
+
+    function object(){
+    document.getElementById("arraysPoints").innerHTML="";
+    document.getElementById("functionsPoints").innerHTML="";
+    document.getElementById("stringPoints").innerHTML="";
+    document.getElementById("numberPoints").innerHTML="";
+    document.getElementById("nullPoints").innerHTML="";
+    document.getElementById("UndefinedPoints").innerHTML="";
+
+        var objectPoints = document.getElementById("objectPoints");
+        objectPoints.innerHTML="";
+        document.getElementById("object").style.backgroundColor="#007aff";
+        document.getElementById("object").style.borderRadius="5px";
+        var objectPoints = document.getElementById("objectPoints");
+        var ul1 = document.createElement("li");
+        ul1.textContent="Objects are used to store various Keyed collections and more complex entities."
+        var ul2 = document.createElement("li");
+        ul2.textContent="some Primitives data can be objects if they defined with the new Keywords like(Booleans, Numbers, Strings)";
+        var ul3 = document.createElement("li");
+        ul3.textContent="Dates, Maths, Regularexpressions, Arrays, Functions and Objects are always objects";
+        var ul4 = document.createElement("li");
+        ul4.textContent="in one line we can says that 'All Javascript Values, except primitives, are objects.'"
+        var ul5 = document.createElement("li");
+        ul5.textContent="object are mutable."
+        objectPoints.append(ul1, ul2, ul3, ul4, ul5);
+    }
+    function arrays(){
+    document.getElementById("objectPoints").innerHTML="";
+    document.getElementById("functionsPoints").innerHTML="";
+    document.getElementById("stringPoints").innerHTML="";
+    document.getElementById("numberPoints").innerHTML="";
+    document.getElementById("nullPoints").innerHTML="";
+    document.getElementById("UndefinedPoints").innerHTML="";
+
+        var arraysPoints = document.getElementById("arraysPoints");
+        arraysPoints.innerHTML="";
+        document.getElementById("arrays").style.backgroundColor="#007aff";
+        document.getElementById("arrays").style.borderRadius="5px";
+        var ul1 = document.createElement("li");
+        ul1.textContent="Array is a global object which can hold more than one value."
+        var ul2 = document.createElement("li");
+        ul2.textContent="Arrays are list-like objects whose prototype has methods to perform traversal and mutation Operations."
+        var ul3 = document.createElement("li");
+        ul3.textContent="length and types of an Array are not fixed. Array's length can change at any time."
+        var ul4 = document.createElement("li");
+        ul4.textContent="Arrays cannot use strings as element indexes but we can use integers as Array's element indexes."
+        var ul5 = document.createElement("li");
+        ul5.textContent="Arrays are mutable."
+        arraysPoints.append(ul1, ul2, ul3, ul4, ul5);
+    }
+    function functions(){
+        document.getElementById("objectPoints").innerHTML="";
+    document.getElementById("arraysPoints").innerHTML="";
+    document.getElementById("stringPoints").innerHTML="";
+    document.getElementById("numberPoints").innerHTML="";
+    document.getElementById("nullPoints").innerHTML="";
+    document.getElementById("UndefinedPoints").innerHTML="";
+
+        var functionsPoints = document.getElementById("functionsPoints");
+        functionsPoints.innerHTML="";
+        document.getElementById("functions").style.backgroundColor="#007aff";
+        document.getElementById("functions").style.borderRadius="5px";
+        var ul1 = document.createElement("li");
+        ul1.textContent="A JavaScript function is a block of code designed to perform a particular task.";
+        var ul2 = document.createElement("li");
+        ul2.textContent="A JavaScript function is executed when 'something' calls it."
+        var ul3 = document.createElement("li");
+        ul3.textContent="Every JavaScript function is actually a Function object."
+        var ul4 = document.createElement("li");
+        ul4.textContent="the Function constructor creates functions that execute in the global scope only."
+        var ul5 = document.createElement("li");
+        ul5.textContent="functions are mutable."
+        functionsPoints.append(ul1, ul2, ul3, ul4, ul5);
+    }
+    function string(){
+        document.getElementById("objectPoints").innerHTML="";
+    document.getElementById("arraysPoints").innerHTML="";
+    document.getElementById("functionsPoints").innerHTML="";
+    document.getElementById("numberPoints").innerHTML="";
+    document.getElementById("nullPoints").innerHTML="";
+    document.getElementById("UndefinedPoints").innerHTML="";
+
+        var stringPoints = document.getElementById("stringPoints");
+        stringPoints.textContent="";
+        document.getElementById("string").style.backgroundColor="#007aff";
+        document.getElementById("string").style.borderRadius="5px";
+        var ul1 = document.createElement("li");
+        var ul2 = document.createElement("li");
+        var ul3 = document.createElement("li");
+        var ul4 = document.createElement("li");
+        var ul5 = document.createElement("li");
+
+        ul1.textContent="The String object is used to represent and manipulate a sequence of characters.";
+        ul2.textContent="Strings are useful for holding data that can be represeented in text form.";
+        ul3.textContent="strings are written by enclosing their content in quotes (single or double quotes)";
+        ul4.textContent="string cannot be divided, multiplied or subtracted, but the + operator can be used on them.";
+        ul5.textContent="strings are immutable.";
+
+        stringPoints.append(ul1, ul2, ul3, ul4, ul5);
+    }
+    function number(){
+        document.getElementById("objectPoints").innerHTML="";
+    document.getElementById("arraysPoints").innerHTML="";
+    document.getElementById("functionsPoints").innerHTML="";
+    document.getElementById("stringPoints").innerHTML="";
+    document.getElementById("nullPoints").innerHTML="";
+    document.getElementById("UndefinedPoints").innerHTML="";
+
+        var numberPoints = document.getElementById("numberPoints");
+        numberPoints.textContent="";
+        document.getElementById("number").style.backgroundColor="#007aff";
+        document.getElementById("number").style.borderRadius="5px";
+        var ul1 = document.createElement("li");
+        var ul2 = document.createElement("li");
+        var ul3 = document.createElement("li");
+        var ul4 = document.createElement("li");
+        var ul5 = document.createElement("li");
+
+        ul1.textContent="Number is a primitive wrapper object used to represent and manipulate numbers like 58 or -58";
+        ul2.textContent="JavaScript has only one type of number. Numbers can be written with or without decimals.";
+        ul3.textContent="if numbers are in quotes then numbers are called as a string.";
+        ul4.textContent="Values of other types can be converted to numbers using the Number() function.";
+        ul5.textContent="Numbers are immutable.";
+
+        numberPoints.append(ul1, ul2, ul3, ul4, ul5);
+    }
+    function Null(){
+        document.getElementById("objectPoints").innerHTML="";
+    document.getElementById("arraysPoints").innerHTML="";
+    document.getElementById("functionsPoints").innerHTML="";
+    document.getElementById("stringPoints").innerHTML="";
+    document.getElementById("numberPoints").innerHTML="";
+    document.getElementById("UndefinedPoints").innerHTML="";
+
+        var nullPoints = document.getElementById("nullPoints");
+        nullPoints.innerHTML="";
+        document.getElementById("Null").style.backgroundColor="#007aff";
+        document.getElementById("Null").style.borderRadius="5px";
+        var ul1 = document.createElement("li");
+        var ul2 = document.createElement("li");
+        var ul3 = document.createElement("li");
+        var ul4 = document.createElement("li");
+        var ul5 = document.createElement("li");
+
+        ul1.textContent="null is one of JavaScript's primitive Values and is treated as falsy for boolean operations.";
+        ul2.textContent="the value null represents the intentional absence of any object value.";
+        ul3.textContent="null is not an identifier for a property of the global object, like undefined.";
+        ul4.textContent="null expresses a lack of identifiacation, indicating that a variable points to no object.";
+        ul5.textContent="null is immutable";
+
+
+        nullPoints.append(ul1, ul2, ul3, ul4, ul5);
+    }
+    function Undefined(){
+        document.getElementById("objectPoints").innerHTML="";
+    document.getElementById("arraysPoints").innerHTML="";
+    document.getElementById("functionsPoints").innerHTML="";
+    document.getElementById("stringPoints").innerHTML="";
+    document.getElementById("numberPoints").innerHTML="";
+    document.getElementById("nullPoints").innerHTML="";
+
+        var UndefinedPoints = document.getElementById("UndefinedPoints");
+        UndefinedPoints.innerHTML="";
+        document.getElementById("Undefined").style.backgroundColor="#007aff";
+        document.getElementById("Undefined").style.borderRadius="5px";
+        var ul1 = document.createElement("li");
+
+        var ul2 = document.createElement("li");
+        var ul3 = document.createElement("li");
+
+        
+        ul1.textContent="The global undefined property represents the primitive value undefined.";
+        ul2.textContent="undefined is a non-configurable, non-writable property.";
+        ul3.textContent="The undefined property indicates that a variable has not been asssigned a value, or not declared at all.";
+
+        UndefinedPoints.append(ul1, ul2, ul3);
+    }
+
+</script>

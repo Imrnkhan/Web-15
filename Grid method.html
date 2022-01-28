@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        grid-gap: 20px;
+      }
+      #container > div {
+        border: 1px solid red;
+      }
+      #container > div > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        
+      }
+
+      /* small screen  */
+
+      @media only screen and (min-width: 0px) and (max-width: 320px) {
+        #container {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(9, 200px);
+        }
+      }
+
+      /* medium screen */
+      @media only screen and (min-width: 321px) and (max-width: 720px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(5, 200px);
+        }
+      }
+#container>div>p{
+  color: teal;
+  margin-top: 40px;
+}
+#container>div>div>span{
+  color: gold;
+  margin-top: 20px;
+}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <div>
+          <p>Cappuccino</p>
+          <span>$49</span>
+        </div>
+
+        <p>Usage of the Internet is becoming more common due to rapd advance</p>
+      </div>
+
+      <div>
+         <div>
+          <p>Cappuccino</p>
+          <span>$49</span>
+        </div>
+
+        <p>Usage of the Internet is becoming more common due to rapd advance</p>
+      </div>
+      <div>
+        <div>
+          <p>Cappuccino</p>
+          <span>$49</span>
+        </div>
+
+        <p>Usage of the Internet is becoming more common due to rapd advance</p>
+      </div>
+      <div>
+        <div>
+          <p>Cappuccino</p>
+          <span>$49</span>
+        </div>
+
+        <p>Usage of the Internet is becoming more common due to rapd advance</p>
+      </div>
+      <div>
+        <div>
+          <p>Cappuccino</p>
+          <span>$49</span>
+        </div>
+
+        <p>Usage of the Internet is becoming more common due to rapd advance</p>
+      </div>
+      <div>
+        <div>
+          <p>Cappuccino</p>
+          <span>$49</span>
+        </div>
+
+        <p>Usage of the Internet is becoming more common due to rapd advance</p>
+      </div>
+      <div>
+        <div>
+          <p>Cappuccino</p>
+          <span>$49</span>
+        </div>
+
+        <p>Usage of the Internet is becoming more common due to rapd advance</p>
+      </div>
+      <div>
+        <div>
+          <p>Cappuccino</p>
+          <span>$49</span>
+        </div>
+
+        <p>Usage of the Internet is becoming more common due to rapd advance</p>
+      </div>
+      <div>
+        <div>
+          <p>Cappuccino</p>
+          <span>$49</span>
+        </div>
+
+        <p>Usage of the Internet is becoming more common due to rapd advance</p>
+      </div>
+    </div>
+  </body>
+</html>
