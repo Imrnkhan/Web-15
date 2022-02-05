@@ -66,3 +66,28 @@
 // Some interesting problems that can be solved optimally using two pointers are
 // Reversing an Array (Constant Space Complexity)
 // Rotating an Array by K Steps
+
+
+
+
+
+// //simple function
+// function vehicle(name,maker,engine){
+
+// 	this.name = name;
+
+// 	this.maker = maker;
+
+// 	this.engine = engine;
+
+// }
+// //new keyword to create an object
+// let car = new vehicle('GT','BMW','1998cc');
+
+// console.log(car.name);
+
+// console.log(car.maker);
+
+// console.log(car['engine']);
+
+

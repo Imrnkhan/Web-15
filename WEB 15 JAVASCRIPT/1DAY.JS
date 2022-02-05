@@ -22,4 +22,3 @@
 // // removing by index and number of element
 // months.splice(1, 3);
 // console.log(months)
-

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+    function Array(){
+        this.length = arguments.length;
+        for(var i = 0;i<this.length;i++){
+            this[i]=arguments[i];
+        }
+    }
+
+    Array.prototype.push = function(x){
+        let index = this.length;
+        this[index] = x;
+        this.length++;
+    }
+
+
+    let array2 = []
+    Array.prototype.rev = function(){
+        for(var j = this.length-1;j>=0;j--){
+            array2.push(array[j]);
+        }
+    }
+    let array3 =[]
+    Array.prototype.format = function(){
+        for(var k = 0;k<this.length;k++){
+            array3.push(array[k]);
+        }
+    }
+
+Array.prototype.first = function(){
+    return this[0];
+
+
+
+}
+
+
+
+
+const array = new Array("1","2","3","4","5");                                                                             
+array.push("77");
+console.log("Array:",array);
+ 
+
+
+array.rev()
+console.log("Rev-Array:",array2)
+array.format()
+console.log("Array-format:",array3)
+
+console.log("First:" + array.first());
+
+</script>
+
+

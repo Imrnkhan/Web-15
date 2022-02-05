@@ -1,0 +1,82 @@
+<!-- Try Call, apply, bind exercise
+
+- Every Teacher, Player and Student is a person.
+
+- Can we create a blueprint of person and use them in other blueprints of Teacher, Player and Student.
+
+ 
+
+function Person(n, a) {
+    this.name = n;
+    this.age = a;
+  }
+
+  function Teacher(s, n, a) {
+    Person.call(this, n, a);
+    this.name = n;
+    this.age = a;
+    this.subject = s;
+  }
+
+  function Student(s, n, a) {
+    Person.apply(this, [n, a]);
+    this.name = n;
+    this.age = a;
+    this.subject = s;
+  }
+  function Player(s, n, a) {
+    var x = Person.bind(this, n, a);
+    x();
+    this.sport = s;
+  }
+
+  var teacher1 = new Teacher("Physics", "Rahul", 26);
+
+  var player1 = new Player("Cricket", "Virat", 30);
+
+  var student1 = new Player("Js", "Tushar", 19);
+ 
+
+     console.log("student1:", student1);
+
+  console.log(player1);
+
+  -->
+  <!-- Difference between Call, Apply and Bind
+- Apply will be used if you need array as an argument.
+
+- Bind can be used in conditional statements.
+
+- Above code has applications of call, apply and bind. The difference is explained there itself.
+
+ 
+
+Summary of this
+
+Default Binding - Alone, this refers to the global object. In a function, this refers to the global object.
+Implicit Binding - In a method, this refers to the owner object.
+Explicit Binding - Methods like call(), and apply() can refer this to any object.
+New Binding -  Using a constructor function  -->
+
+
+
+<!-- function longestSubarray(array[],k){
+     -->
+     var arr = [2, 3, 4, 6]
+     var n= 4
+    left = -1
+    right = 0
+    sum = 0;
+    for (i = 0;i<array.length;i++){
+        if (array[i] % k != 0){
+            if (left == -1) left = i
+            right = i
+        }
+        sum += array[i]
+    }
+    if (sum % k != 0) return 1 
+    if (left == -1) return 0
+    left = left + 1
+    right = array.length - right
+    max_window_size = array.length - min(left,right)
+    return window_size

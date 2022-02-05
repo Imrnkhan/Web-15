@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        input {
+            display: block;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <input type="text" name="name" placeholder="name" required>
+        <input type="text" name="number" placeholder="number" required>
+        <input type="text" name="city" placeholder="city" required>
+        <button type="submit">save</button>
+    </form>
+    <script>
+
+
+        function Students() {
+            this.data = [];
+            this.save = function (name, number, city) {
+                this.data.push(
+                    {
+                        name: name,
+                        number: number,
+                        city: city
+                    }
+                )
+                localStorage.data = JSON.stringify(this.data);
+            }
+        }
+        var students = new Students;
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var input = document.querySelectorAll("input");
+            var name = input[0].value;
+            var number = input[1].value;
+            var city = input[2].value;   
+            this.reset();
+            students.save(name,number,city);
+            alert("data saved successfully")
+        })
+    </script>
+</body>
+
+</html>
+
+
+
+
+
