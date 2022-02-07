@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container > table {
+      margin: 2%;
+    border: 1px solid;
+  }
+  .container > table td {
+    text-align: center;
+    width: 5.5em;
+    border: 1px solid;
+  }
+  .discount{
+      margin: 2%;
+  }
+  .checkout{
+      margin: 2%;
+  }

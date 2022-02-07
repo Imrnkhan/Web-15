@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            background-color: teal;
+            display: flex;
+            color: aliceblue;
+            justify-content: space-between;
+            height: 60px;
+            padding: 25px 0px 0px 20px;
+            border-radius: 20px;
+
+        }
+        .right{
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+
+        }
+        .left{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left"></div>
+        <div class="right">
+            <div class="">Signin</div>
+            <div class="">SignUp</div>
+            <div class="">cart</div>
+            <div class="">Add to cart</div>
+            <a href="cart.html"></a>
+        </div>
+
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="url" />
+    <button onclick="storeImage()">Store Image</button>
+    <a href="slideshow2.html"><button>Watch Slideshow</button></a>
+  </body>
+</html>
+
+<script>
+  function storeImage() {
+    let url = document.getElementById("url").value;
+    var images_arr = JSON.parse(localStorage.getItem("images")) || [];
+    images_arr.push(url);
+    localStorage.setItem("images", JSON.stringify(images_arr));
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      img {
+        width: 50%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="Start()">start</button>
+    <button onclick="Storp()">stop</button>
+    <div id="slide"></div>
+  </body>
+</html>
+
+<script>
+  let id;
+  function Start() {
+    let div = document.getElementById("slide");
+    div.innerHTML = null;
+    let images = JSON.parse(localStorage.getItem("images"));
+    let img = document.createElement("img");
+
+    img.src = images[0];
+    div.append(img);
+    let i = 1;
+
+    id = setInterval(function () {
+      if (i == images.length) {
+        i = 0;
+      }
+
+      img.src = images[i];
+      div.append(img);
+      i++;
+    }, 100);
+  }
+
+  function Storp() {
+    clearInterval(id);
+  }
+</script>

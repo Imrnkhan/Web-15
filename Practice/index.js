@@ -990,3 +990,7 @@
 //         }
 //     }
 //     console.log(check())
+
+// var arr = [1,3,4,52,7,89,8]
+// arr.sort((a, b) => a - b)
+//         console.log(arr.join(" "))

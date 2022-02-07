@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style/checkout.css" />
+    
+
+
+  </head>
+
+  <body>
+    <div id="order-form">
+      
+      <div id="order-form" style="margin-top: 2em">
+        <h2>Check Out</h2>
+        <input type="number" placeholder="Please Enter Your Phone No." />
+        <input type="text" placeholder="Please Enter Your Email" />
+        <input
+          class="btn"
+          type="button"
+          onclick="check()"
+          value="SUBMIT YOUR ORDER"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function check() {
+    let textarea = document.querySelector("input").value;
+
+    if (textarea.length == 0) {
+      alert("Please Fill All Details");
+    } else {
+      alertmsg();
+    }
+  }
+  function alertmsg() {
+    setTimeout(alertmsg2, 3000);
+    alert("Order Accepted");
+  }
+
+  function alertmsg2() {
+    setTimeout(alertmsg3, 5000);
+    alert("Order Is Being Cooked");
+  }
+  function alertmsg3() {
+    setTimeout(alertmsg4, 2000);
+    alert("Order Ready");
+  }
+  function alertmsg4() {
+    setTimeout(alertmsg5, 2000);
+    alert("Order Out For Delivery");
+  }
+  function alertmsg5() {
+    alert("Order Delivered");
+  }
+</script>
