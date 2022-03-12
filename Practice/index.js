@@ -33,7 +33,7 @@
 // 1 2 3 4
 // than using the next line for ( str = "\n")
 
-// var num = 7
+// var num = 4
 // str = ""
 // for(var i = 1;i<=num;i++){
 //     for(var j = 1;j<=num;j++){
@@ -994,3 +994,163 @@
 // var arr = [1,3,4,52,7,89,8]
 // arr.sort((a, b) => a - b)
 //         console.log(arr.join(" "))
+
+
+
+
+// normal bubble sort 👍👍👍👍👍👍👍👍
+
+
+
+// var arr = [3, 5, 0, 9, 8]
+// var N = 5
+//         for(var i = 0; i < N; i++){
+//              for(var j = 0 ; j < N-i-1 ; j++){
+//                   if(arr[j] > arr[j + 1]){
+//                   var temp = arr[j]
+//                   arr[j] = arr[j + 1]
+//                   arr[j + 1] = temp
+//                   }
+//              }
+//         }
+//         console.log(arr.join(" "))
+
+
+
+// find the middle elemenet in the Array👍👍👍👍👍👍👍👍
+
+
+// var arr = [8,4,6]
+// arr = arr.sort((a,b)=>a-b)
+// console.log(arr[1])
+
+
+
+
+
+
+
+
+// // Recursive Bubble sort 👍👍👍👍👍👍👍👍
+// var arr = [64, 34, 25, 12, 22, 11, 90 ]
+// // function bubbleSort(arr, n){
+// var n= 7
+ 
+//     // Base case
+//     if (n == 1)
+//         return;
+  
+//     // One pass of bubble
+//     // sort. After this pass,
+//     // the largest element
+//     // is moved (or bubbled)
+//     // to end.
+     
+//     for (var i = 0; i < n - 1; i++)
+//         if (arr[i] > arr[i + 1])
+//         {
+         
+//             // swap arr[i], arr[i+1]
+//             var temp = arr[i];
+//             arr[i] = arr[i + 1];
+//             arr[i + 1] = temp;
+//         }
+  
+//     // Largest element is fixed,
+//     // recur for remaining array
+//     (arr, n - 1);
+
+// console.log(arr,n-1)
+
+// function fib(N){
+// This case frist on minus(-) in the n-1 and return back of the n-2 in the this condition apply on the base case basic follow conditions,
+//         if (N == 0 || N == 1){
+//                 return N
+//         }
+//         return fib(N-1) + fib(N-2);
+// }
+// console.log(fib(5))
+
+
+
+
+
+// console.log(fact(5))
+// function fact(n){
+//     if(n === 0) {
+//         return 1;
+//     }
+//     if(n < 0) {
+//         return 0;
+//     }
+//     return fact(n-1) + fact(n-2) + fact(n-3)
+// }
+
+// console.log(rec(7))
+// function rec(n){
+//         if(n==0)
+//         return 1
+//         if(n<0)
+//         return 0
+//         return rec(n-1)+rec(n-3)+rec(n-5)
+//         }
+
+
+
+// console.log(profit(12))
+// function profit(n){
+//         if(n==0){
+            
+//         return 1
+//         }
+//         if(n<0){
+//             return 0
+//         }
+//             return profit(n-4)+profit(n-8)
+//     }
+
+
+// function factorial(n){
+        //     if (n == 0 || n == 1) 
+        // return 1
+        //     return n * factorial(n-1)
+        // }
+        // console.log(factorial(6))
+
+
+
+
+        // Object👍👍👍👍👍
+
+//        1. Given an array find the unique items in the array
+
+// var arr = ["rahul", "mohan", "suraj", "rahul", "mohan","chirag"];
+// var unique = {}
+// for(var i = 0;i<arr.length;i++){
+//         unique[arr[i]]="present"
+
+// }
+
+// console.log(unique)
+// console.log(Object.keys(unique))
+
+
+// Logic 2👍👍
+// var res = ["rahul", "mohan", "suraj", "rahul", "mohan","chirag"];
+
+// var unique = []
+// for(var i = 0;i<res.length;i++){
+//         var count = 0
+//         for(var j = 0;j<unique.length;j++){
+//                 if(res[i]==unique[j]){
+//                         count++
+//                 }
+//         }
+//         if(count==0){
+//                 unique.push(res[i])
+//         }
+// }
+// console.log(unique)
+
+
+// 2. Given a string print the number of times each character appears

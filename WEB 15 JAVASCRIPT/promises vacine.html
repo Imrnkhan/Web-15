@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name: <input type="text" id="name">
+    <button onclick="Register()">Register</button>
+
+</body>
+</html>
+<script>
+  let queue = ["Pablo", "Raju", "Shyam", "Babu bhaiyaa"];
+
+function Register() {
+  // let name = document.getElementById("name").value;
+  let name = document.querySelector("#name").value
+
+  queue.push(name);
+
+  // let message = `${name} your registration is successfull, cheers!`;
+  let message = name + " your registration is successfull, cheers!";
+
+  alert(message);
+
+  let promise = new Promise(function (resolve, reject) {
+    let x = setInterval(function () {
+      if (queue[0] === name) {
+        resolve(`${name} its your turn now`);
+        clearInterval(x);
+      }
+    }, 1000);
+  });
+
+  promise.then(function (res) {
+    console.log("res:", res);
+  });
+}
+
+function Vaccination_InProgress() {
+  if (queue.length === 0) {
+    clearInterval(id);
+  }
+  queue.shift();
+  console.log("queue:", queue);
+}
+
+let id = setInterval(Vaccination_InProgress, 2000);
+
+</script>
+
+
+
+<!-- /components of a promise -->
+<!-- 
+//1. pending state
+//2. fullfiled -> output (any kind of message)
+//3. Not fullfilled -> ( error kind of message)
+
+//argument to Promise() -> anonymous function -> argument to anonymous function -> resolve, reject
+
+// let myPromise = new Promise(function (resolve, reject) {
+// reject("THIS ERROR OCCURED, CHECK SPELLINGS");
+// });
+
+// //succes value
+// myPromise.then(function (response) {
+// console.log("response:", response);
+// });
+
+// //failure value?
+// myPromise.catch(function (error) {
+// console.log("error:", error);
+// });
+
+//EXAMPLE
+
+// let passexam = true;
+
+// let parentPromise = new Promise(function (resolve, reject) {
+// setTimeout(function () {
+// if (passexam) {
+// resolve("laptop");
+// } else {
+// reject("paragon chappal");
+// }
+// }, 5000);
+// });
+
+// console.log("pending");
+
+// parentPromise.then(function (resolve) {
+// console.log("resolve:", resolve);
+
+// console.log("uploaded done");
+// });
+
+// parentPromise.catch(function (err) {
+// console.log("err:", err);
+// }); -->
