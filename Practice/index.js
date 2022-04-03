@@ -1153,4 +1153,380 @@
 // console.log(unique)
 
 
-// 2. Given a string print the number of times each character appears
+// 2. Given a string print the number of times each character appears👍👍👍
+
+// var name = "masai"
+// var details = {}
+// for(var i = 0;i<name.length;i++){
+//     //loop run on the name length
+//     var char = name[i]
+//     //frist char present on the string starting
+//     if(details[char]==undefined){
+//         //frst time char is present on not if the present frist time print console
+//     details[char]=1
+// }
+// else{
+//     details[char] =details[char]+1
+//     //if the char is again come and print second time 
+// }
+// }
+// console.log(details)
+
+
+
+
+
+
+
+// Even evenPalindrome check Yes and No 👍👍👍👍👍👍👍👍
+
+
+
+// function evenPalindrome(N,str){
+//         N= 7
+//         str ='abcdcfa'
+//         var even_char = ""
+//         for(var i =0;i<str.length;i++){
+//                 if(i%2==0){
+//                         even_char+=str[i]
+
+//                 }
+//         }
+//         var rev = ""
+//         for(var j = even_char.length-1;j>=0;j--){
+//                 rev+=even_char[j]
+//         }
+//         if(even_char==rev){
+//                 console.log("Yes")
+//         }
+//         else{
+//                 console.log("No")
+//         }
+// }
+// evenPalindrome()
+
+
+
+
+// function oddPalindrome(N,str){
+//         N= 7
+//         str ='abcdcfa'
+//         var even_char = ""
+//         for(var i =0;i<str.length;i++){
+//                 if(i%2==1){
+//                         even_char+=str[i]
+
+//                 }
+//         }
+//         var rev = ""
+//         for(var j = even_char.length-1;j>=0;j--){
+//                 rev+=even_char[j]
+//         }
+//         if(even_char==rev){
+//                 console.log("Yes")
+//         }
+//         else{
+//                 console.log("No")
+//         }
+// }
+// oddPalindrome()
+
+
+
+
+
+
+// Print this pattren 👍👍👍👍👍👍👍
+
+
+
+// *       *
+// *       *
+// *       *
+// *       *
+// * * * * *
+
+// function patternPrintingII(n) {
+//         // Write code here
+//         for(var i = 0; i < n; i++) {
+//                 // running loop N tak
+//       var ans = ""
+//       for(var j = 0;j < n; j++) {
+//         //       j runing loop N tak 
+//         if(i == n-1) {
+//                 // evey time check if i==4 and print *
+//           ans += "* "
+//         } else if (j == 0 || j == n-1) {
+//                 // evey time check if j ==0 and 4 and than go else condition
+//           ans += "* "
+//         } else {
+//           ans += "  "
+//         }
+//       }
+//       console.log(ans)
+//     }
+//     }
+// patternPrintingII(5)    
+
+
+
+
+// In the first sample test case, the indexes with the value 1 are2 3 4 5. Therefore, the required sum becomes2 + 3 + 4 + 5 = 14
+
+// In the second sample test case, the indexes with the value 1 are2 4. Therefore, the required sum becomes2 + 4 = 6
+// // this side 0 consider as the 0 and 1 consider as increase order number 
+
+// var arr = [0,1,1,1,1]
+// var sum = 0
+// for(var i = 0;i<arr.length;i++){
+//         if(arr[i]=="1"){
+// sum = sum+i+1
+//         }
+// }
+// console.log(sum)
+
+
+
+
+
+
+// Even sumsub Array👍👍👍👍👍👍
+// 1
+// 1 2
+// 1 2 3
+// 2
+// 2 3
+// 3
+// this side making 2 sum sab Array
+// var arr = [1,2,3]
+// var N = 3
+// var count=0
+// for(var i = 0;i<N;i++){
+//         sum = 0
+//         for(var j = i;j<N;j++){
+
+//                 sum= sum+arr[j]
+//                 if(sum%2===0){
+//                         count++
+//                 }
+//         }
+// }
+// console.log(count)
+
+
+
+
+
+// Strongly Typed Password👍👍👍👍👍👍👍
+
+// var N = 4
+
+// var arr = ["test123", "new@t", "mon*y", "nrupul"]
+// var temp =""
+// for(var i =0;i<N;i++){
+// var count =0
+// for(var j=0;j<arr[i].length;j++){
+//         if(arr[i][j]=='@' || arr[i][j]=='$' ||arr[i][j]=='#' ||arr[i][j]=='*'){
+//                 count++
+// }
+// }
+// if(count){
+//         temp+="strong "
+// }
+// else{
+//         temp+="week "
+// }
+// }
+// console.log(temp)
+
+
+
+
+// Find the pairt of the sum is diviible of the value stored in the M ‼️❗❗❗❗
+// var count = 0
+// var N = 5
+// var M = 4
+// var arr = [1,3,4,5,3]
+// for(var i = 0;i<arr.length;i++){
+//         for(var j =i+1;j<arr.length;j++){
+//                 if((arr[i]+arr[j])%M==0){
+//                         count++
+//                 }
+//         }
+// }
+// console.log(count)
+
+
+
+
+// find the Odd product in the Columns ❗❗❗❗❗❗
+// var M = 3
+// var arr = [[1,2,3],[4,5,6],[7,8,9]]
+// for(var i =0;i<M;i++){
+//         var res = 1
+//         for(var j =0;j<arr.length;j++){
+// if(arr[j][i]%2==1){
+//         res = res*arr[j][i]
+// }
+//         }
+//         console.log(res)
+// }
+
+
+
+
+
+// function prime(prm){
+//         var count = 0;
+//           for(i=0;i<=prm;i++){
+//           if(prm%i==0){
+//           count++
+//           }
+//             }
+//           if(count==2){
+//           return true;
+            
+//           }
+//           else{
+//           return false;
+//           }
+//         }
+        
+        
+//         function matrixNonPrimeCheck(N, M, arr) {
+          
+//           var count1 =0;
+//           for (var i=0;i<N;i++){
+//           for(var j=0;j<M;j++){
+//           var res = prime(arr[i][j])
+//             if(res==false){
+//             count1++
+//             }
+//           }
+//           }
+//           console.log(count1)
+//         }
+
+
+
+
+// JS-XIV Arrays Multidimensional❗❗❗❗❗❗
+
+// Your first 2D Array Problem
+
+// var arr = [[1,2],[3,4],[5,6]]
+// for(var i = 0;i<arr.length;i++){
+// console.log(arr[i].join(" "))
+// }
+
+
+
+// Sum of Rows ❗❗❗❗❗
+
+// var arr = [[1,2],[3,4],[5,6]]
+// var M = 2
+// var N = 3
+// for(var i = 0;i<N;i++){
+//         var sum = 0
+//         for(var j = 0;j<M;j++){
+//                 sum = sum +arr[i][j]
+//         }
+//         console.log(sum);
+// }
+
+
+// sum of colum ❗❗❗❗❗
+
+// var arr = [[1,2],[3,4],[5,6]]
+//  var M = 2
+//  var N = 3
+//  for(var i = 0;i<M;i++){
+//          var sum = 0
+//          for(var j = 0;j<N;j++){
+//                  sum = sum+arr[j][i]
+//          }
+//          console.log(sum)
+//  }
+
+
+
+
+// Sum of Indexes   ❗❗❗❗❗❗
+
+
+//  var arr = [[1,2],[3,4],[5,6]]
+//  var M = 2
+//  var N = 3
+//  for(var i = 0;i<N;i++){
+//          var sum = ""
+//          for(var j = 0;j<M;j++){
+//                  sum = sum +[i+j]+ " "
+
+//          }
+//          console.log(sum);
+//  }
+
+
+
+
+
+// Even Sum in Rows❗❗❗❗❗❗❗
+
+
+// var arr = [[1,2,3],[4,5,6],[7,8,9]]
+// var M = 3
+// var N = 3
+// for(var i =0;i<N;i++){
+//         var sum = 0
+//         for(var j = 0;j<M;j++){
+//                 if(arr[i][j]%2==0){
+//                         sum = sum+arr[i][j]
+
+//                 }
+//         }
+//         console.log(sum);
+// }
+
+
+
+
+// Odd Sum in Rows ❗❗❗❗❗❗
+
+
+
+
+// var arr = [[1,2,3],[4,5,6],[7,8,9]]
+// var M = 3
+// var N = 3
+
+// for(var i =0;i<N;i++){
+//         var sum = 0
+//         for(var j =0;j<M;j++){
+//                 if(arr[i][j]%2==1){
+//                         sum = sum +arr[i][j]
+//                 }
+//         }
+//         console.log(sum)
+// }
+
+                              
+
+
+// var arr = [[1,2,3],[4,5,6],[7,8,9]]
+
+// for(var i = 0;i<arr.length;i++){
+//         for(var j = 0;j<arr.length;j++){
+//                 console.log(arr[i][j]+" "+i+" "+j)
+//                 // console.log(arr[i][j])
+//         }
+// }
+
+
+var arr = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
+rows = 4
+cols = 3
+for (var j = 0;j < cols;j++) {
+    for (var i = 0;i < rows;i++) {
+        console.log(arr[i][j])
+    }
+}
