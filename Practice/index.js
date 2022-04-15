@@ -1522,11 +1522,439 @@
 // }
 
 
-var arr = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
-rows = 4
-cols = 3
-for (var j = 0;j < cols;j++) {
-    for (var i = 0;i < rows;i++) {
-        console.log(arr[i][j])
-    }
+// var arr = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
+// rows = 4
+// cols = 3
+// for (var j = 0;j < cols;j++) {
+//     for (var i = 0;i < rows;i++) {
+//         console.log(arr[i][j])
+//     }
+// }
+
+
+
+
+
+// function twoArrayAndSum(n, m, arr, s){
+//         //write code here
+        
+//         var count = 0
+        
+//         for (var i = 0;i < n;i++) {
+//             for (var j = 0;j <= m - 3;j++) {
+//                 var sum = (arr[i][j] + arr[i][j + 1] + arr[i][j + 2])
+//                 if (sum == s) {
+//                     count ++
+//                 }
+//             }
+//         }
+        
+//         for (var j = 0;j < m;j++) {
+//             for (var i = 0;i <= n - 3;i++) {
+//                 var sum = (arr[i][j] + arr[i + 1][j] + arr[i + 2][j])
+//                 if (sum == s) {
+//                     count ++
+//                 }            
+//             }
+//         }
+        
+//         for (var i = 0;i <= n - 3;i++) {
+//             for (var j = 0;j <= m - 3;j++) {
+//                 var sum = arr[i][j] + arr[i + 1][j + 1] + arr[i + 2][j + 2]
+//                 if (sum == s) {
+//                     count ++
+//                 }
+//             }
+//         }
+        
+//         for (var i = 0;i <= n - 3;i++) {
+//             for (var j = 2;j < m;j++) {
+//                 var sum = arr[i][j] + arr[i + 1][j - 1] + arr[i + 2][j - 2]
+//                 if (sum == s) {
+//                     count ++
+//                 }
+//             }
+//         }    
+//         console.log(count)
+//     }
+      
+
+
+
+
+
+
+
+
+
+
+// the longest sub Array incresing ❗❗❗❗❗
+
+
+// // var arr = [1, 2, 1, 2, 3, 1]
+// var arr = [1, 2, 3, 4, 1, 2]
+// var N = 6
+// var ans = 1
+// for(var i =0;i<N;i++){
+//         var count = 1
+//         for(var j =i+1;j<N;j++){
+//                 if(arr[j]>arr[j-1]){
+//                         count++
+//                 }else{
+//                         break;
+//                 }
+//                 if(count>ans){
+//                         ans = count
+
+//                 }
+//         }
+// }
+// console.log(ans)
+
+
+
+
+
+
+
+
+
+
+
+// Longest Increasing Subarray Ended
+// Description
+
+// Given an arrayarrofnintegers.
+
+// You need to find out the length of the longest subarray which is strictly increasing i.e, every element is greater than it's the previous element in that subarray.
+
+
+// Input
+// The first line of the input contains one integer t (1 ≤ t ≤ 10) — the number of test cases. Then t test cases follow.
+
+// The first line of each test case contains a single integer n (1 ≤ n ≤ 100) — the number of elements in the array A.
+
+// The second line of each test case contains n integers (1 ≤ Ai ≤ 100).
+
+
+// Output
+// For each test case, print the answer: The length of the longest subarray.
+
+
+// Sample Input 1 
+
+// 2
+// 2
+// 1 1
+// 6
+// 1 2 1 2 3 1
+// Sample Output 1
+
+// 1
+// 3
+// Hint
+
+// For Sample Input 1:-
+
+// Subarrays which are strictly increasing are [1] and [1]. So maximum size of sub-array is 1.
+
+// For Sample Input 2:-
+
+// Subarrays which are strictly increasing are [1,2] , [1,2,3] and [1]. So maximum size of sub-array ([1,2,3]) is 3. So answer is 3.
+
+
+
+
+
+// var arr = [1,2,1,2,1]
+//  var main_count = 1
+//  var sub_count = 1
+// var N = 5
+// for(var i = 1;i<N;i++){
+//         if(arr[i]>arr[i-1]){
+//                 sub_count++
+//                 if(main_count<sub_count){
+//                         main_count=sub_count
+//                 }
+//         }
+//         else{
+//                 sub_count=1
+//         }
+        
+// }
+// console.log(main_count);
+
+
+
+// palindrome longest ❗❗❗❗❗❗
+
+
+// var str = "thisracecarisgood"
+// // take an blank arr 
+// var res = []
+// for(var i = 0;i<str.length;i++){
+//         var a = ""
+//         for(var j = i;j<str.length;j++){
+//                 a = a+str[j]
+//                 var rev = a.split("").reverse().join("")
+//                 if(a==rev){
+
+//                         res.push(a.length)
+//                 }
+//         }
+// }
+// console.log(Math.max(...res))
+
+
+
+
+
+// var str = "a"
+
+// var ans = ""  // to create our ans
+// var count = 1  // for count number of time present any charactor
+// for(var i = 1; i < str.length; i++) {  // loop
+//     if(str[i] == str[i-1]) {  // check if present element is equal to previous element
+//         count++  // the count++
+//     } else {  
+//         ans += str[i-1] + count  // we will add our charactor and number of time present into answer
+//         count = 1  // change value to 1 again
+//     }
+// }
+// if(count > 1 || str[i-1] != str[i-2]) {  // it will check if our count is > 1 or last character != 2nd last charactor
+//     ans += str[i-1] + count  // add last character and count into answer
+// }
+// console.log(ans))
+
+
+
+
+
+// for(var i = 0;i<=1000;i++){
+//     var val = 80;
+//     var curr = i;
+//     if(curr>150){
+//     val =val + (curr-150)*10;
+//     curr = 150;
+// }
+// if(curr>50){
+//     val = val + (curr-50)*5;
+//     curr = 50;
+// }
+// if(curr>0){
+//     val = val +(curr-0)*3;
+//     curr = 0
+// }
+// if(val == n){
+//             console.log(i);
+
+
+// }
+
+    
+// }
+
+
+
+
+// <script>
+
+// // Javascript program to find Majority
+// // element in an array
+
+// // Function to find Majority element
+// // in an array
+// function findMajority(arr, n)
+// {
+// 	let maxCount = 0;
+// 	let index = -1; // sentinels
+	
+// 	for(let i = 0; i < n; i++)
+// 	{
+// 		let count = 0;
+// 		for(let j = 0; j < n; j++)
+// 		{
+// 			if (arr[i] == arr[j])
+// 				count++;
+// 		}
+
+// 		// Update maxCount if count of
+// 		// current element is greater
+// 		if (count > maxCount)
+// 		{
+// 			maxCount = count;
+// 			index = i;
+// 		}
+// 	}
+
+// 	// If maxCount is greater than n/2
+// 	// return the corresponding element
+// 	if (maxCount > n / 2)
+// 		document.write(arr[index]);
+// 	else
+// 		document.write("No Majority Element");
+// }
+
+// // Driver code
+// let arr = [ 1, 1, 2, 1, 3, 5, 1 ];
+// let n = arr.length;
+
+// // Function calling
+// findMajority(arr, n);
+
+// // This code is contributed by suresh07
+
+// </script>
+
+
+
+
+//  var N = 6
+// var arr = [1, 1, 1, 1, 2, 3]
+//  var maxcount = 0
+// for(var i = 0;i<arr.length;i++){
+//     var count = 0
+//     for(var j = 0;j<arr.length;j++){
+//         if(arr[i]==arr[j])
+//         count++
+//     }
+//     if(count>maxcount){
+//         maxcount=count 
+//        var res = 0
+//     }
+// }
+// if(maxcount>N/2){
+//     console.log(arr[0])
+// }else{
+//     console.log(-1)
+// }
+
+
+
+
+
+
+// var n =arr.length
+
+//   for(var i = 0;i<n;i++){
+//       if(day == arr[i]){
+//           var d = Math.abs((N+(i))%7)
+//           console.log(arr[d])
+//       }
+//   }
+
+
+// nput: arr[] = {1, 1, 2, 2, 2, 2, 3,},   x = 2
+//   Output: 4 // x (or 2) occurs 4 times in arr[]
+
+
+// // find the arr is is equal in k ❗❗❗❗❗❗
+// var arr = [1, 1, 2, 2, 2, 2, 3]
+// var k =2
+// var res = 0
+// for(var i =0;i<arr.length;i++){
+//         if(k==arr[i]){
+//                 res++
+//         }
+// }
+// console.log(res)
+
+
+
+// find the the index of the same in k ❗❗❗❗❗❗❗
+
+// var arr = [3,4,7,8,2,9,0,5]
+// var k = 5
+// for(var i =0;i,arr.length;i++){
+//         if(arr[i]==k){
+//                 console.log(i)
+//         }
+      
+// }
+
+
+
+// array of product /❗❗❗❗❗❗
+
+// var arr = [1,2,3,4,5]
+
+//         var Product = 1;
+//      for (var i = 0; i < arr.length; i++) {
+//          Product = Product* arr[i]
+       
+//          console.log(Product)
+//         }
+//    console.log(Product)
+       
+
+// // Find the Arrayof the product in  ❗❗❗❗❗❗❗❗
+// // i = 0 ==> 2*3*4*5 = 120
+
+// // i = 1 ==> 1*3*4*5 = 60
+
+// // i = 3 ==> 1*2*4*5 = 40
+
+// // i = 4 ==> 1*2*3*5 = 30
+
+// // i = 5 ==> 1*2*3*4 = 24
+
+
+// var arr = [1,2,3,4,5]
+// var product = 1
+// for(var i =0;i<arr.length;i++){
+//         product= product*arr[i]
+//         // console.log(product)
+// }
+// var str = ""
+// for(var i =0;i<arr.length;i++){
+//         str= str+product/arr[i]+" "
+
+// }
+// console.log(str)
+
+
+
+
+
+// find the index of present on the value of k ❗❗❗❗❗❗
+
+function findIndex(arr,k){
+for(var i =0;i<arr.length;i++){
+        if(arr[i]==k){
+                return i
+        }
+        else if(arr[i]>k){
+                return i
+        }
 }
+return n
+
+}
+let arr = [ 1, 3, 5, 6 ];
+// let n = arr.length;
+let k = 5;
+console.log(findIndex(arr,k))
+
+
+
+// var values=[1,2,3,4]
+
+// var ans=values.slice(1);
+
+// console.log(ans);
+
+// var count = [1,,3];
+
+// let x={
+
+//   firstname:"Tom",
+  
+//   lastname:"John"
+  
+//   }
+  
+//   let y=x
+  
+//   y.firstname="karan"
+  
+//   console.log(x)
