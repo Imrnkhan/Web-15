@@ -751,8 +751,6 @@
 // }
 // }
 
-
-
 // Use the same function to print Non-Primes from 2 to a given limit
 // function isPrime(num){
 //     var res = 0
@@ -792,14 +790,12 @@
 // }
 // console.log(isSmall_case("S"))
 
-
-
 // Write a function to replace spaces in a given string with -
 
 // function replace(input){
 //     var res = ""
 //     for(var i = 0;i<input.length;i++){
-        // if the input string has given space(" ") and given the (-)
+// if the input string has given space(" ") and given the (-)
 //         if(input[i]==" "){
 //             res = res+"-"
 //         }else{
@@ -835,19 +831,15 @@
 // var output = add(2,3)
 // console.log("output is" ,output)
 
-
-
 // Problem
 // Write a function named addNumbers which takes two numbers as input and return their sum
 // Use the function to calculate the sum of given three numbers
 // function sum(a,b) {
-        // return a+b
-        // console.log(a+b)
+// return a+b
+// console.log(a+b)
 // }
 // console.log(sum(4,5))
 // sum(4,5)
-
-
 
 // Problem
 // Write code to find the absolute difference of two numbers
@@ -858,14 +850,10 @@
 // NOTE: It must consist of two functions 1. To find the difference 2. To find the absolute value .
 
 // function dif(a,b) {
-        // this fuction always give the positive value 
+// this fuction always give the positive value
 //         return Math.abs(a-b);
 // }
 // console.log(dif(4,8))
-
-
-
-
 
 // Problem
 // Write a function isOdd which returns a boolean value based the number is odd or not
@@ -878,8 +866,6 @@
 //         return false
 // }
 // console.log(isOdd(5))
-
-
 
 // Problem
 // Write code to calculate the average of an array
@@ -899,7 +885,6 @@
 //         console.log(arraySum(arr))
 // }
 
-
 // Problem
 // Write a function to convert a character to lower case
 // Use this function to convert a given word to lower case
@@ -914,14 +899,12 @@
 //         for(var i = 0; i < str.length; i++) {
 //         //        n.push( str[i].toLowerCase())
 //         str[i] = str[i].toLowerCase()
-                
+
 //         }
 //         // return n
 //         return str
 // }
 // console.log(makeLower(str))
-
-
 
 // Problem
 // Given a string swap the case and print the output
@@ -956,7 +939,6 @@
 //         return sum;
 //     }
 //     console.log(check(arr))
-    
 
 // function check(){
 //         sum = 0;
@@ -965,13 +947,11 @@
 //                 return sum;
 //             }else{
 //                 sum += i;
-//             }    
+//             }
 //         }
 //         return sum
 //     }
 // //     console.log(check())
-
-
 
 //     function check(){
 //         a = 2;
@@ -979,9 +959,9 @@
 //         for (i = 2;i<4;i++){
 //             if (i % 2 == 0){
 //                 a += i;
-//             }else{  
+//             }else{
 //                 b += i;
-//             }    
+//             }
 //         }
 //         if (a > b){
 //             return true;
@@ -995,12 +975,7 @@
 // arr.sort((a, b) => a - b)
 //         console.log(arr.join(" "))
 
-
-
-
 // normal bubble sort 👍👍👍👍👍👍👍👍
-
-
 
 // var arr = [3, 5, 0, 9, 8]
 // var N = 5
@@ -1015,47 +990,37 @@
 //         }
 //         console.log(arr.join(" "))
 
-
-
 // find the middle elemenet in the Array👍👍👍👍👍👍👍👍
-
 
 // var arr = [8,4,6]
 // arr = arr.sort((a,b)=>a-b)
 // console.log(arr[1])
 
-
-
-
-
-
-
-
 // // Recursive Bubble sort 👍👍👍👍👍👍👍👍
 // var arr = [64, 34, 25, 12, 22, 11, 90 ]
 // // function bubbleSort(arr, n){
 // var n= 7
- 
+
 //     // Base case
 //     if (n == 1)
 //         return;
-  
+
 //     // One pass of bubble
 //     // sort. After this pass,
 //     // the largest element
 //     // is moved (or bubbled)
 //     // to end.
-     
+
 //     for (var i = 0; i < n - 1; i++)
 //         if (arr[i] > arr[i + 1])
 //         {
-         
+
 //             // swap arr[i], arr[i+1]
 //             var temp = arr[i];
 //             arr[i] = arr[i + 1];
 //             arr[i + 1] = temp;
 //         }
-  
+
 //     // Largest element is fixed,
 //     // recur for remaining array
 //     (arr, n - 1);
@@ -1070,10 +1035,6 @@
 //         return fib(N-1) + fib(N-2);
 // }
 // console.log(fib(5))
-
-
-
-
 
 // console.log(fact(5))
 // function fact(n){
@@ -1095,12 +1056,10 @@
 //         return rec(n-1)+rec(n-3)+rec(n-5)
 //         }
 
-
-
 // console.log(profit(12))
 // function profit(n){
 //         if(n==0){
-            
+
 //         return 1
 //         }
 //         if(n<0){
@@ -1109,18 +1068,14 @@
 //             return profit(n-4)+profit(n-8)
 //     }
 
-
 // function factorial(n){
-        //     if (n == 0 || n == 1) 
-        // return 1
-        //     return n * factorial(n-1)
-        // }
-        // console.log(factorial(6))
+//     if (n == 0 || n == 1)
+// return 1
+//     return n * factorial(n-1)
+// }
+// console.log(factorial(6))
 
-
-
-
-        // Object👍👍👍👍👍
+// Object👍👍👍👍👍
 
 //        1. Given an array find the unique items in the array
 
@@ -1133,7 +1088,6 @@
 
 // console.log(unique)
 // console.log(Object.keys(unique))
-
 
 // Logic 2👍👍
 // var res = ["rahul", "mohan", "suraj", "rahul", "mohan","chirag"];
@@ -1152,7 +1106,6 @@
 // }
 // console.log(unique)
 
-
 // 2. Given a string print the number of times each character appears👍👍👍
 
 // var name = "masai"
@@ -1167,20 +1120,12 @@
 // }
 // else{
 //     details[char] =details[char]+1
-//     //if the char is again come and print second time 
+//     //if the char is again come and print second time
 // }
 // }
 // console.log(details)
 
-
-
-
-
-
-
 // Even evenPalindrome check Yes and No 👍👍👍👍👍👍👍👍
-
-
 
 // function evenPalindrome(N,str){
 //         N= 7
@@ -1205,9 +1150,6 @@
 // }
 // evenPalindrome()
 
-
-
-
 // function oddPalindrome(N,str){
 //         N= 7
 //         str ='abcdcfa'
@@ -1231,14 +1173,7 @@
 // }
 // oddPalindrome()
 
-
-
-
-
-
 // Print this pattren 👍👍👍👍👍👍👍
-
-
 
 // *       *
 // *       *
@@ -1252,7 +1187,7 @@
 //                 // running loop N tak
 //       var ans = ""
 //       for(var j = 0;j < n; j++) {
-//         //       j runing loop N tak 
+//         //       j runing loop N tak
 //         if(i == n-1) {
 //                 // evey time check if i==4 and print *
 //           ans += "* "
@@ -1266,15 +1201,12 @@
 //       console.log(ans)
 //     }
 //     }
-// patternPrintingII(5)    
-
-
-
+// patternPrintingII(5)
 
 // In the first sample test case, the indexes with the value 1 are2 3 4 5. Therefore, the required sum becomes2 + 3 + 4 + 5 = 14
 
 // In the second sample test case, the indexes with the value 1 are2 4. Therefore, the required sum becomes2 + 4 = 6
-// // this side 0 consider as the 0 and 1 consider as increase order number 
+// // this side 0 consider as the 0 and 1 consider as increase order number
 
 // var arr = [0,1,1,1,1]
 // var sum = 0
@@ -1284,11 +1216,6 @@
 //         }
 // }
 // console.log(sum)
-
-
-
-
-
 
 // Even sumsub Array👍👍👍👍👍👍
 // 1
@@ -1313,10 +1240,6 @@
 // }
 // console.log(count)
 
-
-
-
-
 // Strongly Typed Password👍👍👍👍👍👍👍
 
 // var N = 4
@@ -1339,9 +1262,6 @@
 // }
 // console.log(temp)
 
-
-
-
 // Find the pairt of the sum is diviible of the value stored in the M ‼️❗❗❗❗
 // var count = 0
 // var N = 5
@@ -1356,9 +1276,6 @@
 // }
 // console.log(count)
 
-
-
-
 // find the Odd product in the Columns ❗❗❗❗❗❗
 // var M = 3
 // var arr = [[1,2,3],[4,5,6],[7,8,9]]
@@ -1372,10 +1289,6 @@
 //         console.log(res)
 // }
 
-
-
-
-
 // function prime(prm){
 //         var count = 0;
 //           for(i=0;i<=prm;i++){
@@ -1385,16 +1298,15 @@
 //             }
 //           if(count==2){
 //           return true;
-            
+
 //           }
 //           else{
 //           return false;
 //           }
 //         }
-        
-        
+
 //         function matrixNonPrimeCheck(N, M, arr) {
-          
+
 //           var count1 =0;
 //           for (var i=0;i<N;i++){
 //           for(var j=0;j<M;j++){
@@ -1407,9 +1319,6 @@
 //           console.log(count1)
 //         }
 
-
-
-
 // JS-XIV Arrays Multidimensional❗❗❗❗❗❗
 
 // Your first 2D Array Problem
@@ -1418,8 +1327,6 @@
 // for(var i = 0;i<arr.length;i++){
 // console.log(arr[i].join(" "))
 // }
-
-
 
 // Sum of Rows ❗❗❗❗❗
 
@@ -1434,7 +1341,6 @@
 //         console.log(sum);
 // }
 
-
 // sum of colum ❗❗❗❗❗
 
 // var arr = [[1,2],[3,4],[5,6]]
@@ -1448,11 +1354,7 @@
 //          console.log(sum)
 //  }
 
-
-
-
 // Sum of Indexes   ❗❗❗❗❗❗
-
 
 //  var arr = [[1,2],[3,4],[5,6]]
 //  var M = 2
@@ -1466,12 +1368,7 @@
 //          console.log(sum);
 //  }
 
-
-
-
-
 // Even Sum in Rows❗❗❗❗❗❗❗
-
 
 // var arr = [[1,2,3],[4,5,6],[7,8,9]]
 // var M = 3
@@ -1487,13 +1384,7 @@
 //         console.log(sum);
 // }
 
-
-
-
 // Odd Sum in Rows ❗❗❗❗❗❗
-
-
-
 
 // var arr = [[1,2,3],[4,5,6],[7,8,9]]
 // var M = 3
@@ -1509,9 +1400,6 @@
 //         console.log(sum)
 // }
 
-                              
-
-
 // var arr = [[1,2,3],[4,5,6],[7,8,9]]
 
 // for(var i = 0;i<arr.length;i++){
@@ -1520,7 +1408,6 @@
 //                 // console.log(arr[i][j])
 //         }
 // }
-
 
 // var arr = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
 // rows = 4
@@ -1531,15 +1418,11 @@
 //     }
 // }
 
-
-
-
-
 // function twoArrayAndSum(n, m, arr, s){
 //         //write code here
-        
+
 //         var count = 0
-        
+
 //         for (var i = 0;i < n;i++) {
 //             for (var j = 0;j <= m - 3;j++) {
 //                 var sum = (arr[i][j] + arr[i][j + 1] + arr[i][j + 2])
@@ -1548,16 +1431,16 @@
 //                 }
 //             }
 //         }
-        
+
 //         for (var j = 0;j < m;j++) {
 //             for (var i = 0;i <= n - 3;i++) {
 //                 var sum = (arr[i][j] + arr[i + 1][j] + arr[i + 2][j])
 //                 if (sum == s) {
 //                     count ++
-//                 }            
+//                 }
 //             }
 //         }
-        
+
 //         for (var i = 0;i <= n - 3;i++) {
 //             for (var j = 0;j <= m - 3;j++) {
 //                 var sum = arr[i][j] + arr[i + 1][j + 1] + arr[i + 2][j + 2]
@@ -1566,7 +1449,7 @@
 //                 }
 //             }
 //         }
-        
+
 //         for (var i = 0;i <= n - 3;i++) {
 //             for (var j = 2;j < m;j++) {
 //                 var sum = arr[i][j] + arr[i + 1][j - 1] + arr[i + 2][j - 2]
@@ -1574,22 +1457,11 @@
 //                     count ++
 //                 }
 //             }
-//         }    
+//         }
 //         console.log(count)
 //     }
-      
-
-
-
-
-
-
-
-
-
 
 // the longest sub Array incresing ❗❗❗❗❗
-
 
 // // var arr = [1, 2, 1, 2, 3, 1]
 // var arr = [1, 2, 3, 4, 1, 2]
@@ -1611,23 +1483,12 @@
 // }
 // console.log(ans)
 
-
-
-
-
-
-
-
-
-
-
 // Longest Increasing Subarray Ended
 // Description
 
 // Given an arrayarrofnintegers.
 
 // You need to find out the length of the longest subarray which is strictly increasing i.e, every element is greater than it's the previous element in that subarray.
-
 
 // Input
 // The first line of the input contains one integer t (1 ≤ t ≤ 10) — the number of test cases. Then t test cases follow.
@@ -1636,12 +1497,10 @@
 
 // The second line of each test case contains n integers (1 ≤ Ai ≤ 100).
 
-
 // Output
 // For each test case, print the answer: The length of the longest subarray.
 
-
-// Sample Input 1 
+// Sample Input 1
 
 // 2
 // 2
@@ -1662,10 +1521,6 @@
 
 // Subarrays which are strictly increasing are [1,2] , [1,2,3] and [1]. So maximum size of sub-array ([1,2,3]) is 3. So answer is 3.
 
-
-
-
-
 // var arr = [1,2,1,2,1]
 //  var main_count = 1
 //  var sub_count = 1
@@ -1680,17 +1535,14 @@
 //         else{
 //                 sub_count=1
 //         }
-        
+
 // }
 // console.log(main_count);
 
-
-
 // palindrome longest ❗❗❗❗❗❗
 
-
 // var str = "thisracecarisgood"
-// // take an blank arr 
+// // take an blank arr
 // var res = []
 // for(var i = 0;i<str.length;i++){
 //         var a = ""
@@ -1705,10 +1557,6 @@
 // }
 // console.log(Math.max(...res))
 
-
-
-
-
 // var str = "a"
 
 // var ans = ""  // to create our ans
@@ -1716,7 +1564,7 @@
 // for(var i = 1; i < str.length; i++) {  // loop
 //     if(str[i] == str[i-1]) {  // check if present element is equal to previous element
 //         count++  // the count++
-//     } else {  
+//     } else {
 //         ans += str[i-1] + count  // we will add our charactor and number of time present into answer
 //         count = 1  // change value to 1 again
 //     }
@@ -1725,10 +1573,6 @@
 //     ans += str[i-1] + count  // add last character and count into answer
 // }
 // console.log(ans))
-
-
-
-
 
 // for(var i = 0;i<=1000;i++){
 //     var val = 80;
@@ -1748,18 +1592,13 @@
 // if(val == n){
 //             console.log(i);
 
-
 // }
 
-    
 // }
-
-
-
 
 // <script>
 
-// // Javascript program to find Majority
+// // Javascript program to find Majority❗❗❗❗❗❗
 // // element in an array
 
 // // Function to find Majority element
@@ -1768,7 +1607,7 @@
 // {
 // 	let maxCount = 0;
 // 	let index = -1; // sentinels
-	
+
 // 	for(let i = 0; i < n; i++)
 // 	{
 // 		let count = 0;
@@ -1806,9 +1645,6 @@
 
 // </script>
 
-
-
-
 //  var N = 6
 // var arr = [1, 1, 1, 1, 2, 3]
 //  var maxcount = 0
@@ -1819,7 +1655,7 @@
 //         count++
 //     }
 //     if(count>maxcount){
-//         maxcount=count 
+//         maxcount=count
 //        var res = 0
 //     }
 // }
@@ -1828,11 +1664,6 @@
 // }else{
 //     console.log(-1)
 // }
-
-
-
-
-
 
 // var n =arr.length
 
@@ -1843,10 +1674,8 @@
 //       }
 //   }
 
-
 // nput: arr[] = {1, 1, 2, 2, 2, 2, 3,},   x = 2
 //   Output: 4 // x (or 2) occurs 4 times in arr[]
-
 
 // // find the arr is is equal in k ❗❗❗❗❗❗
 // var arr = [1, 1, 2, 2, 2, 2, 3]
@@ -1859,8 +1688,6 @@
 // }
 // console.log(res)
 
-
-
 // find the the index of the same in k ❗❗❗❗❗❗❗
 
 // var arr = [3,4,7,8,2,9,0,5]
@@ -1869,10 +1696,8 @@
 //         if(arr[i]==k){
 //                 console.log(i)
 //         }
-      
+
 // }
-
-
 
 // array of product /❗❗❗❗❗❗
 
@@ -1881,11 +1706,10 @@
 //         var Product = 1;
 //      for (var i = 0; i < arr.length; i++) {
 //          Product = Product* arr[i]
-       
+
 //          console.log(Product)
 //         }
 //    console.log(Product)
-       
 
 // // Find the Arrayof the product in  ❗❗❗❗❗❗❗❗
 // // i = 0 ==> 2*3*4*5 = 120
@@ -1897,7 +1721,6 @@
 // // i = 4 ==> 1*2*3*5 = 30
 
 // // i = 5 ==> 1*2*3*4 = 24
-
 
 // var arr = [1,2,3,4,5]
 // var product = 1
@@ -1912,30 +1735,25 @@
 // }
 // console.log(str)
 
-
-
-
-
 // find the index of present on the value of k ❗❗❗❗❗❗
+// ❗❗❗❗
 
-function findIndex(arr,k){
-for(var i =0;i<arr.length;i++){
-        if(arr[i]==k){
-                return i
-        }
-        else if(arr[i]>k){
-                return i
-        }
-}
-return n
+// function findIndex(arr,k){
+// for(var i =0;i<arr.length;i++){
+//         if(arr[i]==k){
+//                 return i
+//         }
+//         else if(arr[i]>k){
+//                 return i
+//         }
+// }
+// return n
 
-}
-let arr = [ 1, 3, 5, 6 ];
-// let n = arr.length;
-let k = 5;
-console.log(findIndex(arr,k))
-
-
+// }
+// let arr = [ 1, 3, 5, 6 ];
+// // let n = arr.length;
+// let k = 5;
+// console.log(findIndex(arr,k))
 
 // var values=[1,2,3,4]
 
@@ -1948,13 +1766,269 @@ console.log(findIndex(arr,k))
 // let x={
 
 //   firstname:"Tom",
-  
+
 //   lastname:"John"
-  
+
 //   }
-  
+
 //   let y=x
-  
+
 //   y.firstname="karan"
-  
+
 //   console.log(x)
+
+// function Remove(nums){
+//         let count = 0;
+//         // Loop for all the elements in the array
+//         for (let i = 0; i < nums.length; i++) {
+//                 // If the current element is equal to the next element, we skip
+//                 if (i < nums.length - 1 && nums[i] == nums[i + 1]) {
+//                         continue;
+//                 }
+//                 // We will update the array in place
+//                 nums[count] = nums[i];
+//                 count++;
+//         }
+//         return count;
+// }
+// var nums  = [1,3,4,6,7,8,2,3,6,4,5]
+// console.log(Remove(nums))
+
+// Minimum in sorted & rotated array❗❗❗❗
+// Liner search
+
+// var arr = [1,3,5,,6,7,5,8]
+// var min = arr[0]
+// for(var i =0;i<arr.length;i++){
+// if(min>arr[i])
+// min = arr[i]
+// }
+// console.log(min)
+
+// Find the Unique in masai ❗❗❗❗❗
+
+// var str ="masai"
+// Object = {}
+// for(var i =0;i<str.length;i++){
+//         var char = str[i]
+//         if(Object[char]==undefined){
+//                 Object[char]=1
+//         }else{
+
+//                 Object[char]++
+//         }
+// }
+// var flage = false
+// for(key in Object){
+
+//         if(Object[key]!=1){
+//                 flage= true
+//                 if(!flage){
+//                         console.log("Unique")
+//                 }else{
+//                         console.log("No");
+//                 }
+
+//         }
+// }
+
+// Smaller Element Smaller Neighbour Element❗❗❗❗❗
+
+// // function Element(n,arr){
+//         var arr = [39, 27, 11, 4, 24, 32, 32, 1]
+
+//         var ans = []
+//         for(var i=0;i<arr.length;i++){
+//             for(var j =i-1;j>=0;j--){
+//                 if(arr[j]<arr[i]){
+//                     ans.push(arr[j])
+//                     break;
+//                 }
+//             }
+//             if(j==-1){
+//                 ans.push(-1)
+//             }
+//         }
+//         console.log(ans.join(" "))
+// //     }
+
+// Next greather Element ❗❗❗❗❗❗
+// increasing order
+// // function Greater(n,arr){
+//         var arr = [1, 3, 2, 4]
+//         var ans = []
+//         for(var i =0;i<arr.length;i++){
+//             var next = -1
+//             for(var j = i+1;j<arr.length;j++){
+//                 if(arr[i]<arr[j]){
+//                     next = arr[j]
+//                     break;
+//                 }
+//             }
+//             // console.log(arr[i]+" "+ next)
+//             // console.log(next)
+//             ans.push(next)
+//         }
+//         console.log(ans.join(" "))
+
+// //     }
+
+// Count number of occurrences ❗❗❗❗❗❗
+// liner search algo // O(logn)
+
+// var arr = [3, 4, 5,8, 8, 9, 2, 4];
+// var k = 8;
+// var count = 0;
+// for (var i = 0; i < arr.length; i++) {
+//   if (k == arr[i]) {
+//     count++;
+//   }
+// }
+// console.log(count)
+
+// Number of subarrays having sum exactly equal to k ❗❗❗❗❗
+
+// var arr = [4, 5, 6, 6, 8, 6, 4, 9];
+// var k = 10;
+// count = 0;
+// for (var i = 0; i < arr.length; i++) {
+//   var sum = 0;
+//   for (var j = i; j < arr.length; j++) {
+//     sum = sum + arr[j];
+//     if (sum == k) {
+//       count++;
+//     }
+//   }
+// }
+// console.log(count);
+
+// find the Unique of string ❗❗❗❗❗❗
+
+// var str = "masai"
+// var obj = {}
+
+// for(var i =0;i<str.length;i++){
+// let char = str[i]
+// if(obj[char]==undefined){
+//         obj[char]=1
+// }
+// else{
+//         obj[char]++
+// }
+// }
+// var flage =  false
+// for(key in obj){
+//         if(obj[key]!==1){
+//                 flage=true
+//                 if(!flage){
+//                         console.log("Unique");
+//                 }
+//                 else{
+//                         console.log("No");
+//                 }
+//                        }
+
+// }
+
+// find the Binary in recursive❗❗❗❗❗❗❗❗
+
+// function binary(n,res=""){
+//         // this side res mensa of "" and evely time increse the value and go to next element on the add.
+
+//         if(n==0){
+//                 return res
+//         }
+//         if(n%2==0){
+//                 res = "0"+res
+//         }
+//         if(n%2==1){
+//                 res = "1"+res
+//         }
+//         return binary(Math.floor(n/2),res)
+// }
+// console.log(binary(15))
+
+// // Anagram how to check in the String ❗❗❗❗❗❗❗❗❗
+// var str1 ="anagram"
+// var str2 ="nag a ram"
+// var x = str1.split("").sort().join(" ").trim()
+//  var y = str2.split("").sort().join(" ").trim()
+//     if(x==y){
+//         console.log("True")
+//     }
+//     else{
+//         console.log("False")
+//     }
+
+// // Find the Power of 2 ❗❗❗❗❗❗❗❗❗❗❗
+
+// function  Power(n){
+//         var ans  = 1
+//         if(n<2){
+//                 console.log("false")
+//         }
+//         for(var i = 0;i<n;i++){
+//                 ans = ans*2
+//                 if(ans==n){
+//                         console.log("true");
+//                         break
+
+//                 }
+//                 if(ans>n){
+//                         console.log("false")
+//                        break;
+//                 }
+
+//         }
+// }
+// Power(4)
+
+// // find the Power of three ❗❗❗❗❗❗❗❗❗
+
+// function PowerofThree(n){
+//         if(n<=0){
+//                 console.log("No")
+//         }
+//         if(n%3==0){
+//                 return PowerofThree(n/3)
+//         }
+//         if(n==1){
+//                 console.log("Yes");
+//         }else{
+//                 console.log("No");
+//         }
+// }
+// PowerofThree(3)
+
+// // Bubble sort ❗❗❗❗❗❗❗
+
+// var arr = [7,9,4,0,2]
+// for(var i =0;i<arr.length;i++){
+//         for(var j =0;j<arr.length-i-1;j++){
+//                 if(arr[i]>arr[j+1]){
+//                         temp = arr[j]
+//                         arr[j]=arr[j+1]
+//                         arr[j+1]=temp
+//                 }
+//         }
+
+// }
+// console.log(arr
+
+
+
+
+// // find the Odd index in matrix ❗❗❗❗❗❗❗❗
+
+// var mat = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
+// var N = 4
+// var M =3
+// for (var i = 0; i < N; i++) {
+//   if (i % 2 == 1) {
+//     var bag = "";
+//     for (var j = 0; j <M; j++) {
+//       bag = bag + mat[i][j] + " "
+// }
+// console.log(bag);
+// }
+// }
