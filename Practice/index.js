@@ -628,7 +628,7 @@
 // how to check the vovel true and false
 
 // var str = "aaman"
-// var vovel = true
+// var = true
 // for(var i = 0;i<str.length;i++){
 //     var res = str[i]
 //     if(res=="a" || res=="e" || res=="i" || res=="o" || res=="u"){
@@ -1755,27 +1755,7 @@
 // let k = 5;
 // console.log(findIndex(arr,k))
 
-// var values=[1,2,3,4]
-
-// var ans=values.slice(1);
-
-// console.log(ans);
-
-// var count = [1,,3];
-
-// let x={
-
-//   firstname:"Tom",
-
-//   lastname:"John"
-
-//   }
-
-//   let y=x
-
-//   y.firstname="karan"
-
-//   console.log(x)
+//
 
 // function Remove(nums){
 //         let count = 0;
@@ -1866,7 +1846,7 @@
 //                 }
 //             }
 //             // console.log(arr[i]+" "+ next)
-//             // console.log(next)
+//             // console.log(next)f
 //             ans.push(next)
 //         }
 //         console.log(ans.join(" "))
@@ -2015,9 +1995,6 @@
 // }
 // console.log(arr
 
-
-
-
 // // find the Odd index in matrix ❗❗❗❗❗❗❗❗
 
 // var mat = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
@@ -2032,3 +2009,814 @@
 // console.log(bag);
 // }
 // }
+
+// Array of product ❗❗❗❗❗❗❗❗
+
+// var arr = [8,10,2]
+// let n = arr.length;
+
+//   let result = [];
+//   let product = 1;
+//   for (let i=0;i<n;i++) {
+//       result.push(product);
+//       product *= arr[i];
+//   }
+
+//   product = 1;
+//   for (let i=n-1;i>=0;i--) {
+//       result[i] *= product;
+//       product *= arr[i];
+//   }
+//   console.log(result)
+
+// two sum ❗❗❗❗❗❗❗
+
+// function check(M,B,arr){
+//     var M = 4
+//     var B = 9
+//     var a = "-1 -1" ;
+//      for(var i = 0; i < (M);i++){
+//        for(var j = 0; j < M; j++){
+//            if(i == j){
+//            }else{
+//              if(arr[i] + arr[j] == B){
+//                a = j + " " + i
+//            }
+//          }
+//        }
+//      }
+//      console.log(a)
+//    }
+
+// // slinding window ❗❗❗❗❗
+
+// var arr = [1,2,3,4,5,6,7,8]
+// var ans = 10
+// var b = 4
+// var ans = []
+// var sum = 0
+// for(var i =0;i<b;i++){
+//     sun = sum +arr[i]
+// }
+// ans.push(sum)
+
+// for(var i =b;i<arr.length;i++){
+//     sum = sum+arr[i]
+//     sum = sum-ans[i-b]
+//     ans.push(sum)
+
+// }
+// console.log(ans)
+
+// // 2 pointer ❗❗❗❗❗
+// // this is finding index
+
+// var arr = [1,2,3,4,5,6]
+// var ans = 10
+// var i =0
+// var j = arr.length-1n
+// while(i<j){
+//     sum = arr[i]+arr[j]
+//     if(sum===ans){
+//         console.log(i,j)
+//         break;
+//     }
+//     else if(sum<ans){
+//         i++
+//     }
+//     else{
+//         j--
+//     }
+// }
+
+// print every word in next line ❗❗❗❗❗❗
+
+// ans = ""
+// var str = "mohan is good student"
+// for(var i =0;i<str.length;i++){
+//   if(str[i]!==" "){
+//     ans+=str[i]
+//   }
+//   else{
+//     console.log(ans)
+//     ans=""
+//   }
+// }
+
+// function financial(n,arr,arr1){
+//     arr1[0]= 1
+//     for(var i =1;i<arr.length;i++){
+//         arr1[i]=1
+//          for (let j = i - 1; (j >= 0) && (n[i] >= n[j]); j--)
+//                  arr1[i]++;
+//     }
+//  console.log(arr.join(" "))
+//  }
+
+// 	{
+
+// 	function calculateSpan(arr, n, S)
+// 	{
+
+// 		S[0] = 1;
+
+// 		for (let i = 1; i < n; i++) {
+// 			S[i] = 1; // Initialize span value
+
+// 			for (let j = i - 1; (j >= 0) && (arr[i] >= arr[j]); j--)
+// 				S[i]++;
+// 		}
+// 	}
+
+// 	function printArray(arr)
+// 	{
+// 		let result = arr.join(" ");
+// 		console.log(result);
+// 	}
+
+// 	let arr = [ 10, 4, 5, 90, 120, 80 ];
+// 	let n = arr.length;
+// 	let S = new Array(n);
+// 	S.fill(0);
+
+// 	// Fill the span values in array S[]
+// 	calculateSpan(arr, n, S);
+
+// 	// print the calculated span values
+// 	printArray(S);
+
+// // remove element
+// 	var res = 0
+//     for(var i =0;i<nums.length;i++){
+//         if(nums[i]!=val){
+//             nums[res]=nums[i]
+//             res++
+//         }
+//     }
+//     return res
+
+// // subset
+// const getAllSubsets =
+//   theArray => theArray.reduce(
+//     (subsets, value) => subsets.concat(
+//       subsets.map(set => [value, ...set])
+//     ),
+//     [
+//       []
+//     ]
+//   );
+
+// console.log(getAllSubsets([1, 2, 3]));
+// min = 1
+// max = 100
+// console.log(Math.floor(Math.random() * (max - min) + min));
+
+// // missing interger ❗❗❗❗❗❗❗
+
+// var arr = [5,3,4,1]
+
+// arr.sort((a,b)=>a-b)
+
+// for(var i =0;i<arr.length;i++){
+//     if(arr[i]!=i+1){
+//         console.log(i+1)
+//         break;
+//     }
+// }
+
+// // Array to String ❗❗❗❗❗❗
+
+// var arr = [2, -4, 6, 8, -9]
+// var str = ""
+// for(var i =0;i<arr.length;i++){
+//     if(arr[i] <= 0){
+// str += 0
+//     }
+//     else{
+//         str += arr[i]
+//     }
+//     console.log(str)
+// }
+
+// // print subString ❗❗❗❗❗
+
+// var str ='abcde'
+// for(var i =0;i<str.length;i++){
+//   var bag = ""
+//   for(var j =i;j<str.length;j++){
+//     bag = bag+str[j]
+//     console.log(bag)
+//   }
+// }
+
+// a
+// ab
+// abc
+// abcd
+// abcde
+// b
+// bc
+// bcd
+// bcde
+// c
+// cd
+// cde
+// d
+// de
+// e
+
+// // find the substring size ❗❗❗❗❗❗
+
+// var s = "aaa"
+// var count = 0
+// var arr = []
+// for(var i = 0; i < s.length; i++) {
+//     var a = ""
+//     for(var j = i; j < s.length; j++) {
+//         a += s[j]
+//         if(!(arr.includes(a))) {
+//             count++
+//         }
+//         arr.push(a)
+//     }
+// }
+// console.log(count)
+
+// // summatry ❗❗❗❗❗‼️❗❗❗
+// var n = 4
+// hor = true
+// for(var i =0;i<n;i++){
+//     if(arr[i]== arr[n-1]){
+//         hor = true
+//     }
+//     else{
+//         hor = false;
+//         break;
+//     }
+//     n--
+// }
+// ver = true
+// for(var i =0;i<n;i++){
+//     if(arr[i]!=arr[n-1]){
+//         for(var j =0;j<n;j++){
+//             ver = false
+//             break
+//         }
+//         n--
+//     }
+// }
+
+// if(hor && ver){
+//     console.log("Both");
+
+// }
+// else if(ver){
+//     console.log("vertical");
+// }
+// else if(hor){
+
+//     console.log("horizontal");
+// }
+// else{
+//     console.log("No");
+
+// }
+
+// find palindome substring❗❗❗❗❗❗
+
+// var str = "thisracecarisgood"
+// var res = []
+//   for(var i = 0;i<str.length;i++){
+//       var temp = ""
+//       for(var j = i;j<str.length;j++){
+//           temp = temp+str[j]
+
+//           //above substring make
+
+//       var rev = temp.split("").reverse().join("")
+//       if(temp==rev){
+//           res.push(temp.length)
+//       }
+//       }
+//   }
+//       console.log(Math.max(...res))
+
+// // Insertion sort ❗❗❗❗
+
+// function insertion(arr){
+// var arr = [3, 0, 2, 5, -1, 4, 1]
+// for(var i =1;i<arr.length;i++){
+//     var temp = arr[i]
+//         var j = i-1
+//     while(j>=0 && arr[j]>temp){
+
+//         arr[J+1] =arr[j]
+//         j--
+//     }
+//     arr[j+1] = temp
+
+// }
+// return arr
+// }
+
+// console.log(insertion([3, 0, 2, 5, -1, 4, 1]))
+
+// // const insertion_Sort = (nums) => {
+// //     for (let i = 1; i < nums.length; i++) {
+// //       let j = i - 1
+// //       let temp = nums[i]
+// //       while (j >= 0 && nums[j] > temp) {
+// //         nums[j + 1] = nums[j]
+// //         j--
+// //       }
+// //       nums[j+1] = temp
+// //     }
+// //     return nums
+// //   }
+// //   console.log(insertion_Sort([3, 0, 2, 5, -1, 4, 1]).join(" "));
+
+// // subset & Subsequence❗❗❗❗❗
+
+// var s = [1,2,3,4]
+// var ans = []
+// var cur = 0
+// function subset(s,ans,cur){
+//     if(ans.length > 0){
+//         console.log(ans)
+//     }
+//     if(s.length == cur){
+//         return;
+//     }
+//     for(var i = cur; i < s.length;i++){
+//         ans.push(s[i])
+//         subset(s, ans, i+1)
+//         ans.pop()
+//     }
+// }
+// subset(s,ans,cur)
+
+// Long common sequence❗❗❗❗❗❗ GFG
+
+// function lcs( X, Y , m , n )
+// {
+// 	if (m == 0 || n == 0)
+// 	return 0;
+// 	if (X[m-1] == Y[n-1])
+// 	return 1 + lcs(X, Y, m-1, n-1);
+// 	else
+// 	return max(lcs(X, Y, m, n-1), lcs(X, Y, m-1, n));
+// }
+
+// /* Utility function to get max of 2 integers */
+// function max(a , b)
+// {
+// 	return (a > b)? a : b;
+// }
+
+// 	var s1 = "AGGTAB";
+// 	var s2 = "GXTXAYB";
+
+// 	var X=s1;
+// 	var Y=s2;
+// 	var m = X.length;
+// 	var n = Y.length;
+
+// 	console.log("Length of LCS is" + " " +
+// 								lcs( X, Y, m, n ) );
+
+// Diirent way Buy Cndies❗❗❗
+
+// var arr = [2,3,6,7]
+// var n = 4
+// var k = 7
+// var ans = []
+
+// function rec(arr,n,k,ans,temp,sum,cur) {
+//     if(sum > k) {
+//         return
+//     }
+//     if(sum == k) {
+//         ans.push(temp.join(" "))
+//     }
+//     for(var i = cur; i < n; i++) {
+//         temp.push(arr[i])
+//         rec(arr,n,k,ans,temp,sum+arr[i],i)
+//         temp.pop()
+//     }
+// }
+// rec(arr,n,k,ans,[],0,0)
+// console.log(ans.join("\n"))
+
+// ============================================================================================
+
+// var n= 12
+// for(var i =1;i<n;i++){
+// 	var str = ""
+// 	str+="XY"+n
+// }
+// console.log(str)
+
+// var n = 3
+//         var s = ""
+//         var count = 1
+//         for(var i = 0; i < n; i++) {
+//             s += "XY" + count + (count+1)
+//             count += 2
+//         }
+//         console.log(s)
+
+// var n = 3
+//         var s = ""
+//         var a = ""
+//         var count = 1
+//         for(var i = 1; i <= n; i++) {
+//             a += "@"
+//             s += i + a
+//         }
+//         console.log(s)
+// var n = 3
+//         var s = ""
+//         var a = ""
+//         var count = 1
+//         for(var i = 1; i <= n; i++) {
+//             a += "M"
+//             s += a + "+"
+//         }
+//         console.log(s)
+
+// var n =3
+// var sum =1
+// for(var i=0;i<n;i++){
+// sum= sum+i
+// console.log(sum);
+// sum= sum+3
+// }
+
+// var N =3
+// let sum=1
+//  for(let i=0;i<N;i++){
+//       console.log(sum);
+//         sum+=3
+
+//   }
+
+// var n =15
+// for(var i =1;i<=15;i++){
+// if(i%2==0 && i%4==0){
+//     console.log("no")
+// }
+// if(i%3==0 && i%5==0){
+//     console.log("Yes")
+// }
+// }
+
+// var n =15
+// for(var i =0;i<n;i++){
+//     if(n%5){
+//     }
+//     console.log("Hello instead of the number")
+//     break
+// }
+
+// var n =4
+// for(var i =1;i<=n;i++){
+// if(i%2==0){
+//     console.log("even")
+// }
+// else{
+//     console.log("odd")
+
+// }
+// }
+
+// var n =10
+// for (i=1;i<=n;i++){
+
+//     if (n%i==0)
+//     console.log(i)
+// }
+
+// var n =5
+// for(var i =1;i<=n;i++){
+//     if(i*i%2==0){
+//         console.log("even")
+//     }
+//     else{
+//         console.log("odd")
+//     }
+// }
+
+// var n =6
+// var str =""
+// for(var i =1;i<=n;i++){
+
+//     str+=i+"+"
+// }
+
+// console.log(("-"),str)
+
+// var n =9
+// var str =""
+// for(var i =1;i<=n;i++){
+// if(i%2==1){
+//     str+=i+"#"
+// }
+// }
+// console.log(str)
+
+// var n = 9999
+//         n += ""
+//         var s = 0
+
+//         for(var i = 0; i < n.length; i++) {
+//             s += +n[i]
+//         }
+//         console.log(s)
+
+// let  n = 9999
+// let res = n.toString().split("").map(Number).reduce((a,b)=>a+b)
+// console.log(res)
+
+// let  n = 9999
+// let res =n
+// while(res>10){
+
+//     res = res.toString().split("").map(Number).reduce((a,b)=>a+b)
+
+// }
+// console.log(res)
+
+// let n = 7
+// let res =""
+// for(let  i =1;i<n+1;i++){
+//     if(i%3==0){
+
+//         res = "x"+res
+//     }
+//     else{
+//       res=i+res
+//     }
+// }
+
+// console.log(res)
+
+// let n = 7; // row or column count
+// // defining an empty string
+
+// for(let i = 0; i < n; i++) { // external loop
+//     let string = "";
+//   for(let j = 0; j < n; j++) { // internal loop
+//     string += "*";
+//   }
+//   // newline after each row
+// //   string += "\n";
+//   console.log(string);
+// }
+// // printing the string
+
+// var n = 7;
+// for (var i = 1; i <= n; i++) {
+//   var str = "";
+//   var mid = Math.ceil(n / 2);
+//   for (var j = 1; j <= n; j++) {
+//     if (i == 1) {
+//       str += "* ";
+//     } else if (j == mid) {
+//       str += "* ";
+//     } else {
+//       str += "  ";
+//     }
+//   }
+//   console.log(str)
+// }
+
+
+
+
+
+
+
+// var n = 7;
+// for (var i = 1; i <= n; i++) {
+//   var str = "";
+// //   var mid = Math.ceil(n / 2);
+//   for (var j = 1; j <= n; j++) {
+//     if (j == 1|| j==n) {
+//       str += "* ";
+//     } else if (i == j) {
+//       str += "* ";
+//     } else {
+//       str += "  ";
+//     }
+//   }
+//   console.log(str)
+// }
+
+
+
+
+// var n = 7;
+// var m =2
+// var k =n-1
+// for (var i = 1; i <= n; i++) {
+//   var str = "";
+// //   var mid = Math.ceil(n / 2);
+//   for (var j = 1; j <= n; j++) {
+//     if (i == 1|| i==n) {
+//       str += "* ";
+//     } else if (m==i && k==j) {
+//         m++
+//         k--
+//       str += "* ";
+//     } else {
+//       str += "  ";
+//     }
+//   }
+//   console.log(str)
+// }
+
+ 
+//  var i ,j, end=20;
+//  var isPrime =1;
+//  var sum=0;
+//  for(i=2; i<=end; i++){
+//   for(j=2; j<i/2; j++ ){
+//     if (i %j==0){
+//       isPrime=0;
+//       break;
+//     }
+//   }
+//   if(isPrime==1){
+//     sum += i;
+//   }
+//  }
+//  console.log(i)
+
+
+
+
+// var str = "abca"
+// for(var i =0;i<str.length;i++){
+//   if(str[i]=="a" || str[i]=="b"){
+//      console.log(str[i] + " at index:" + i)
+//   }
+// }
+
+
+
+// //  good pair
+// nums = [1,1,1,1]
+
+// var count = 0; 
+// for(var i = 0; i < nums.length; i++) {
+//     for(var j = i+1; j < nums.length; j++) {
+//         if(nums[i] == nums[j]) {
+//             count++;
+//         }
+//     }
+// }
+// console.log(count)
+
+
+
+
+// find the largest string Number
+
+// var n = "56hgsvsb89nhhs789"
+// var max = 0
+// var ans = ""
+// for(var i = 0; i < n.length; i++) {
+//     if(+n[i] > 0) {
+//         ans += n[i]
+//     } else {
+//         max = Math.max(max, +ans)
+//         ans = ""
+//     }
+// }
+// max = Math.max(max,+ans)
+
+// console.log(max)
+
+
+
+// // exam score
+
+// var ans = 0 
+// var N = ar1.length 
+
+// for(var i = 0; i < N; i++) {
+//     if(ar1[i] == ar2[i]) {
+//         ans +=4
+//     } else if(ar2[i] == "blank") {
+        
+//     } else{
+//         ans -= 1
+//     }
+// }
+// console.log(ans)
+
+
+
+
+
+// // find the pair unique number
+
+// var arr = [2,3,1,6,3,6,2,1,9]
+// arr.sort((a,b)=>a-b)
+// // console.log(arr)
+// for(var i =0;i<arr.length;i++){
+//     if(arr[i]!=arr[i-1] && arr[i]!=arr[i+1]){
+
+//         console.log(arr[i])
+//         break;
+//     }
+// }
+
+
+
+
+
+// var a = "aaa*bbb"
+//     a = a.split("*")
+//     var ans = ""
+//     for(var i = 0; i < a[0].length; i++) {
+//         ans += a[0][i] + a[1][i]
+//     }
+    
+//     console.log(ans)
+
+
+// var a = "4546793"
+    
+//     var ans = a[0]
+//     for(var i = 1; i < a.length; i++) {
+//         if(a[i] % 2 == 0 && a[i-1] % 2 == 0) {
+//             ans += "*"
+//         } else if (a[i] % 2 == 1 && a[i-1] % 2 == 1){
+//           ans += "-"
+//         }
+//         ans += a[i]
+//     }
+    
+//     console.log(ans)
+
+
+
+
+
+// var arr = [55, 44, 65,1,2,3,3,34,5];
+
+// var unique = [...new Set(arr)]
+// console.log(unique)
+
+
+
+
+
+// var arr = [55, 44, 65,1,2,3,3,34,5];
+// arr.sort((a,b)=>a-b)
+// let res =1
+// for (let index = 1; index < arr.length; index++) {
+//    if(arr[index-1]!=arr[index]){
+//     arr[res]=arr[index]
+//     res++
+//    }
+// }
+// console.log(arr.slice(0,res))
+
+
+
+
+// var arr = [[3, 2], [1], [4, 12]] 
+// var sum =0
+
+  
+
+//   for (var i = 0; i < arr.length; i++) {
+    
+  
+//     for (var j = 0; j < arr[i].length; j++) {
+      
+    
+//       sum += arr[i][j];
+      
+//     }
+    
+//   }
+  
+// console.log(sum)
+
+  
+
+
+ans = ""
+var str = "mohan is good student"
+for(var i =0;i<str.length;i++){
+  if(str[i]!==" "){
+    ans+=str[i]
+  }
+  else{
+    console.log(ans)
+    ans= ""
+  }
+}
