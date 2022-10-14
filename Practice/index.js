@@ -1,7 +1,7 @@
-// var num = 19
+// var num = 18
 // var isPrime = true
 // for(var i = 2;i<num;i++){
-//     if(num%i==1){
+//     if(num%i==0){
 //         var isPrime =false
 //     }
 //     }
@@ -11,18 +11,18 @@
 // console.log("No")
 //     }
 // // find the prime number this number is prime or not and check the ture and false
-//     var number = 19
-//     var isPrime = true
-//     for(var i = 2;i<number;i++){
-//         if(number%i ==0){
-//             var isPrime= false
-//         }
-//     }
-//     if(isPrime){
-//         console.log("Yes")
-//     }else{
-//         console.log("No")
-//     }
+    var number = 18
+    var isPrime = true
+    for(var i = 2;i<number;i++){
+        if(number%i ==0){
+            var isPrime= false
+        }
+    }
+    if(isPrime){
+        console.log("Yes")
+    }else{
+        console.log("No")
+    }
 
 // ########  1
 
@@ -293,35 +293,36 @@
 // output
 // 5 4 2 3 1
 
-// var arr =[1,3,2,4,5]
-// var str = ""
-// for(var i =arr.length-1;i>=0;i--){
-//     str = str+arr[i]+" "
-// }
-// console.log(str)
+var arr =[1,3,2,4,5]
+arr.sort((a,b)=>a-b)
+var str = ""
+for(var i =arr.length-1;i>=0;i--){
+    str = str+arr[i]+" "
+}
+console.log(str)
 
 // ########## 10
 // output = 5
 // find the largest arr in number
-// var arr = [5,6,8,4,6,9]
-// for(var i = 0;i<arr.length;i++){
-//     if(arr[0]<arr[i]){
-//         arr[0]=arr[i]
-//     }
-// }
-// console.log(arr[0])
+var arr = [5,6,8,4,6,9]
+for(var i = 0;i<arr.length;i++){
+    if(arr[0]<arr[i]){
+        arr[0]=arr[i]
+    }
+}
+console.log(arr[0])
 
 // ##########  11
 // find the minimum of arr of number
 
 // output= 1
-// var arr= [1,2,3,4,5]
-// for(var i =0;i<arr.length;i++){
-//     if(arr[0]>arr[i]){
-//         arr[0]=arr[i]
-//     }
-// }
-// console.log(arr[0])
+var arr= [1,2,3,4,5]
+for(var i =0;i<arr.length;i++){
+    if(arr[0]>arr[i]){
+        arr[0]=arr[i]
+    }
+}
+console.log(arr[0])
 
 // ######### 12
 // find the even Number in Array
@@ -467,6 +468,7 @@
 //   }
 // console.log(res)
 
+
 // try again same Question
 
 // var str = "ImRaN khan"
@@ -535,11 +537,11 @@
 
 // sort check palindrome
 
-// var str = "mama"
-// var rev = str.split("").reverse().join("")
+var str = "mama"
+var rev = str.split("").reverse().join("")
 
-// if(rev == str) console.log("yes")
-// else console.log("no")
+if(rev == str) console.log("yes")
+else console.log("no")
 
 // #######
 // check Palindrome "Yes" and "No"
@@ -627,30 +629,30 @@
 
 // how to check the vovel true and false
 
-// var str = "aaman"
-// var = true
-// for(var i = 0;i<str.length;i++){
-//     var res = str[i]
-//     if(res=="a" || res=="e" || res=="i" || res=="o" || res=="u"){
-//         var vovel = false
-//         break
+var str = "aaman"
+var vovel = true
+for(var i = 0;i<str.length;i++){
+    var res = str[i]
+    if(res=="a" || res=="e" || res=="i" || res=="o" || res=="u"){
+        var vovel = false
+        break
 
-//     }
-// }
-// console.log(vovel)
+    }
+}
+console.log(vovel)
 
 // #########
 // Vowel & Consonant Count
-// var count = 0
-// var str = "ankush"
-// for(var i = 0;i<str.length;i++){
-//     var res = str[i]
-//     if(res=="a" || res=="e" || res=="i" || res=="o" || res=="u"){
-//         count++
-//     }
+var count = 0
+var str = "ankush"
+for(var i = 0;i<str.length;i++){
+    var res = str[i]
+    if(res=="a" || res=="e" || res=="i" || res=="o" || res=="u"){
+        count++
+    }
 
-// }
-// console.log(count,str.length-count)
+}
+console.log(count,str.length-count)
 
 // check palindrome in two pointer "yes and "No
 // var num = "aman"
@@ -977,18 +979,18 @@
 
 // normal bubble sort 👍👍👍👍👍👍👍👍
 
-// var arr = [3, 5, 0, 9, 8]
-// var N = 5
-//         for(var i = 0; i < N; i++){
-//              for(var j = 0 ; j < N-i-1 ; j++){
-//                   if(arr[j] > arr[j + 1]){
-//                   var temp = arr[j]
-//                   arr[j] = arr[j + 1]
-//                   arr[j + 1] = temp
-//                   }
-//              }
-//         }
-//         console.log(arr.join(" "))
+var arr = [3, 5, 0, 9, 8]
+var N = 5
+        for(var i = 0; i < N; i++){
+             for(var j = 0 ; j < N-i-1 ; j++){
+                  if(arr[j] > arr[j + 1]){
+                  var temp = arr[j]
+                  arr[j] = arr[j + 1]
+                  arr[j + 1] = temp
+                  }
+             }
+        }
+        console.log(arr.join(" "))
 
 // find the middle elemenet in the Array👍👍👍👍👍👍👍👍
 
@@ -1079,51 +1081,52 @@
 
 //        1. Given an array find the unique items in the array
 
-// var arr = ["rahul", "mohan", "suraj", "rahul", "mohan","chirag"];
-// var unique = {}
-// for(var i = 0;i<arr.length;i++){
-//         unique[arr[i]]="present"
+var arr = ["rahul", "mohan", "suraj", "rahul", "mohan","chirag"];
+var unique = {}
+for(var i = 0;i<arr.length;i++){
+        unique[arr[i]]="present"
 
-// }
+}
 
-// console.log(unique)
-// console.log(Object.keys(unique))
+console.log(unique)
+console.log(Object.keys(unique))
 
 // Logic 2👍👍
-// var res = ["rahul", "mohan", "suraj", "rahul", "mohan","chirag"];
 
-// var unique = []
-// for(var i = 0;i<res.length;i++){
-//         var count = 0
-//         for(var j = 0;j<unique.length;j++){
-//                 if(res[i]==unique[j]){
-//                         count++
-//                 }
-//         }
-//         if(count==0){
-//                 unique.push(res[i])
-//         }
-// }
-// console.log(unique)
+var res = ["rahul", "mohan", "suraj", "rahul", "mohan","chirag"];
+
+var unique = []
+for(var i = 0;i<res.length;i++){
+        var count = 0
+        for(var j = 0;j<unique.length;j++){
+                if(res[i]==unique[j]){
+                        count++
+                }
+        }
+        if(count==0){
+                unique.push(res[i])
+        }
+}
+console.log(unique)
 
 // 2. Given a string print the number of times each character appears👍👍👍
 
-// var name = "masai"
-// var details = {}
-// for(var i = 0;i<name.length;i++){
-//     //loop run on the name length
-//     var char = name[i]
-//     //frist char present on the string starting
-//     if(details[char]==undefined){
-//         //frst time char is present on not if the present frist time print console
-//     details[char]=1
-// }
-// else{
-//     details[char] =details[char]+1
-//     //if the char is again come and print second time
-// }
-// }
-// console.log(details)
+var name = "masai"
+var details = {}
+for(var i = 0;i<name.length;i++){
+    //loop run on the name length
+    var char = name[i]
+    //frist char present on the string starting
+    if(details[char]==undefined){
+        //frst time char is present on not if the present frist time print console
+    details[char]=1
+}
+else{
+    details[char] =details[char]+1
+    //if the char is again come and print second time
+}
+}
+console.log(details)
 
 // Even evenPalindrome check Yes and No 👍👍👍👍👍👍👍👍
 
@@ -1541,21 +1544,21 @@
 
 // palindrome longest ❗❗❗❗❗❗
 
-// var str = "thisracecarisgood"
-// // take an blank arr
-// var res = []
-// for(var i = 0;i<str.length;i++){
-//         var a = ""
-//         for(var j = i;j<str.length;j++){
-//                 a = a+str[j]
-//                 var rev = a.split("").reverse().join("")
-//                 if(a==rev){
+var str = "thisracecarisgood"
+// take an blank arr
+var res = []
+for(var i = 0;i<str.length;i++){
+        var a = ""
+        for(var j = i;j<str.length;j++){
+                a = a+str[j]
+                var rev = a.split("").reverse().join("")
+                if(a==rev){
 
-//                         res.push(a.length)
-//                 }
-//         }
-// }
-// console.log(Math.max(...res))
+                        res.push(a.length)
+                }
+        }
+}
+console.log(Math.max(...res))
 
 // var str = "a"
 
@@ -1572,7 +1575,7 @@
 // if(count > 1 || str[i-1] != str[i-2]) {  // it will check if our count is > 1 or last character != 2nd last charactor
 //     ans += str[i-1] + count  // add last character and count into answer
 // }
-// console.log(ans))
+// console.log(ans)
 
 // for(var i = 0;i<=1000;i++){
 //     var val = 80;
@@ -1596,7 +1599,7 @@
 
 // }
 
-// <script>
+// <>
 
 // // Javascript program to find Majority❗❗❗❗❗❗
 // // element in an array
@@ -1641,9 +1644,8 @@
 // // Function calling
 // findMajority(arr, n);
 
-// // This code is contributed by suresh07
 
-// </script>
+
 
 //  var N = 6
 // var arr = [1, 1, 1, 1, 2, 3]
@@ -1777,7 +1779,7 @@
 // Minimum in sorted & rotated array❗❗❗❗
 // Liner search
 
-// var arr = [1,3,5,,6,7,5,8]
+// var arr = [1,3,5,6,7,5,8]
 // var min = arr[0]
 // for(var i =0;i<arr.length;i++){
 // if(min>arr[i])
@@ -1787,30 +1789,30 @@
 
 // Find the Unique in masai ❗❗❗❗❗
 
-// var str ="masai"
-// Object = {}
-// for(var i =0;i<str.length;i++){
-//         var char = str[i]
-//         if(Object[char]==undefined){
-//                 Object[char]=1
-//         }else{
+var str ="masai"
+Object = {}
+for(var i =0;i<str.length;i++){
+        var char = str[i]
+        if(Object[char]==undefined){
+                Object[char]=1
+        }else{
 
-//                 Object[char]++
-//         }
-// }
-// var flage = false
-// for(key in Object){
+                Object[char]++
+        }
+}
+var flage = false
+for(key in Object){
 
-//         if(Object[key]!=1){
-//                 flage= true
-//                 if(!flage){
-//                         console.log("Unique")
-//                 }else{
-//                         console.log("No");
-//                 }
+        if(Object[key]!=1){
+                flage= true
+                if(!flage){
+                        console.log("Unique")
+                }else{
+                        console.log("No");
+                }
 
-//         }
-// }
+        }
+}
 
 // Smaller Element Smaller Neighbour Element❗❗❗❗❗
 
@@ -2050,58 +2052,58 @@
 
 // // slinding window ❗❗❗❗❗
 
-// var arr = [1,2,3,4,5,6,7,8]
-// var ans = 10
-// var b = 4
-// var ans = []
-// var sum = 0
-// for(var i =0;i<b;i++){
-//     sun = sum +arr[i]
-// }
-// ans.push(sum)
+var arr = [1,2,3,4,5,6,7,8]
+var ans = 10
+var b = 4
+var ans = []
+var sum = 0
+for(var i =0;i<b;i++){
+    sun = sum +arr[i]
+}
+ans.push(sum)
 
-// for(var i =b;i<arr.length;i++){
-//     sum = sum+arr[i]
-//     sum = sum-ans[i-b]
-//     ans.push(sum)
+for(var i =b;i<arr.length;i++){
+    sum = sum+arr[i]
+    sum = sum-ans[i-b]
+    ans.push(sum)
 
-// }
-// console.log(ans)
+}
+console.log(ans)
 
 // // 2 pointer ❗❗❗❗❗
 // // this is finding index
 
-// var arr = [1,2,3,4,5,6]
-// var ans = 10
-// var i =0
-// var j = arr.length-1n
-// while(i<j){
-//     sum = arr[i]+arr[j]
-//     if(sum===ans){
-//         console.log(i,j)
-//         break;
-//     }
-//     else if(sum<ans){
-//         i++
-//     }
-//     else{
-//         j--
-//     }
-// }
+var arr = [1,2,3,4,5,6]
+var ans = 10
+var i =0
+var j = arr.length-1
+while(i<j){
+    sum = arr[i]+arr[j]
+    if(sum===ans){
+        console.log(i,j)
+        break;
+    }
+    else if(sum<ans){
+        i++
+    }
+    else{
+        j--
+    }
+}
 
 // print every word in next line ❗❗❗❗❗❗
 
-// ans = ""
-// var str = "mohan is good student"
-// for(var i =0;i<str.length;i++){
-//   if(str[i]!==" "){
-//     ans+=str[i]
-//   }
-//   else{
-//     console.log(ans)
-//     ans=""
-//   }
-// }
+ans = ""
+var str = "mohan is good student"
+for(var i =0;i<str.length;i++){
+  if(str[i]!==" "){
+    ans+=str[i]
+  }
+  else{
+    console.log(ans)
+    ans=""
+  }
+}
 
 // function financial(n,arr,arr1){
 //     arr1[0]= 1
@@ -2173,41 +2175,42 @@
 
 // // missing interger ❗❗❗❗❗❗❗
 
-// var arr = [5,3,4,1]
+var arr = [5,3,4,1]
 
-// arr.sort((a,b)=>a-b)
+arr.sort((a,b)=>a-b)
 
-// for(var i =0;i<arr.length;i++){
-//     if(arr[i]!=i+1){
-//         console.log(i+1)
-//         break;
-//     }
-// }
+for(var i =0;i<arr.length;i++){
+    if(arr[i]!=i+1){
+        console.log(i+1)
+        break;
+    }
+}
 
 // // Array to String ❗❗❗❗❗❗
+// minus value  consider as 0‼️‼️‼️❗❗
 
-// var arr = [2, -4, 6, 8, -9]
-// var str = ""
-// for(var i =0;i<arr.length;i++){
-//     if(arr[i] <= 0){
-// str += 0
-//     }
-//     else{
-//         str += arr[i]
-//     }
-//     console.log(str)
-// }
+var arr = [2, -4, 6, 8, -9]
+var str = ""
+for(var i =0;i<arr.length;i++){
+    if(arr[i] <= 0){
+    str += 0
+    }
+    else{
+        str += arr[i]
+    }
+}
+console.log(str)
 
 // // print subString ❗❗❗❗❗
 
-// var str ='abcde'
-// for(var i =0;i<str.length;i++){
-//   var bag = ""
-//   for(var j =i;j<str.length;j++){
-//     bag = bag+str[j]
-//     console.log(bag)
-//   }
-// }
+var str ='abcde'
+for(var i =0;i<str.length;i++){
+  var bag = ""
+  for(var j =i;j<str.length;j++){
+    bag = bag+str[j]
+    console.log(bag)
+  }
+}
 
 // a
 // ab
@@ -2318,8 +2321,9 @@
 // }
 // return arr
 // }
-
 // console.log(insertion([3, 0, 2, 5, -1, 4, 1]))
+
+
 
 // // const insertion_Sort = (nums) => {
 // //     for (let i = 1; i < nums.length; i++) {
@@ -2524,14 +2528,16 @@
 // }
 // console.log(str)
 
-// var n = 9999
-//         n += ""
-//         var s = 0
 
-//         for(var i = 0; i < n.length; i++) {
-//             s += +n[i]
-//         }
-//         console.log(s)
+// sum of thse number❗❗❗❗ string to array
+var n = 9999
+        n += ""
+        var s = 0
+
+        for(var i = 0; i < n.length; i++) {
+            s += +n[i]
+        }
+        console.log(s)
 
 // let  n = 9999
 // let res = n.toString().split("").map(Number).reduce((a,b)=>a+b)
@@ -2665,8 +2671,9 @@
 
 
 // //  good pair
-// nums = [1,1,1,1]
 
+
+// nums = [1,1,1,1]
 // var count = 0; 
 // for(var i = 0; i < nums.length; i++) {
 //     for(var j = i+1; j < nums.length; j++) {
@@ -2771,10 +2778,63 @@
 
 
 
+// find the remove duplicate
+
+var arr = [55, 44, 65,1,2,3,3,34,5];
+arr.sort((a,b)=>a-b)
+let res =1
+for (let index = 1; index < arr.length; index++) {
+   if(arr[index-1]!=arr[index]){
+    arr[res]=arr[index]
+    res++
+   }
+}
+console.log(arr.slice(0,res))
+
+// =========================================================================
+// sum all array
+
+var arr = [[3, 2], [1], [4, 12]] 
+var sum =0
+
+  
+
+  for (var i = 0; i < arr.length; i++) {
+    
+  
+    for (var j = 0; j < arr[i].length; j++) {
+      
+    
+      sum += arr[i][j];
+      
+    }
+    
+  }
+  
+console.log(sum)
+
+  
+
+
+// ans = ""
+// var str = "mohan is good student"
+// for(var i =0;i<str.length;i++){
+//   if(str[i]!==" "){
+//     ans+=str[i]
+//   }
+//   else{
+//     console.log(ans)
+//     ans= " "
+//   }
+// }
+
+
+
 
 
 // var arr = [55, 44, 65,1,2,3,3,34,5];
 // arr.sort((a,b)=>a-b)
+// console.log(arr)
 // let res =1
 // for (let index = 1; index < arr.length; index++) {
 //    if(arr[index-1]!=arr[index]){
@@ -2787,36 +2847,306 @@
 
 
 
-// var arr = [[3, 2], [1], [4, 12]] 
-// var sum =0
 
-  
 
-//   for (var i = 0; i < arr.length; i++) {
-    
-  
-//     for (var j = 0; j < arr[i].length; j++) {
-      
-    
-//       sum += arr[i][j];
-      
+
+
+// Input: "Welcome to this Java!"; 
+// Output : "emocleW ot siht !avaJ"
+
+
+// var str = "Welcome to this Java!"; 
+// var demo =[]
+// let res = str.split(" ").reverse()
+// for(var i =0;i<res.length;i++){
+//    var str1 = res[i].split("").reverse().join("")
+//    demo.push(str1)
+
+// }
+
+
+
+// console.log(demo.reverse().join(" "))
+
+
+
+
+
+
+
+// var arr =[1,4,4,2,4,1,2,4,1] 
+// var obj ={}
+
+
+
+// for(var i =0;i<arr.length;i++){
+   
+//     if(obj[arr[i]]==undefined){
+//         obj[arr[i]]=1
+
 //     }
-    
+//     else{
+//         obj[arr[i]]++
+//     }
+// }
+// console.log(obj)
+// var anssum =0
+// for(key in obj){
+//     var ans = []
+//     var sum =0
+//     for(let x =0;x<obj[key];x++){
+//         ans.push(key)
+//         sum+=(+key)
+
+//     }
+//     anssum+=sum
+// console.log("["+ans+"]"+" = "+sum)
+// }
+// console.log(anssum)
+
+
+// Output: 
+// [1,1,1] = 3 
+// [4,4,4,4] = 16 
+// [2,2] = 4 
+// 23
+
+
+
+// Input
+// var str = "0009200.000016800.000001000.0000/24" 
+
+// let arr=str.split(".");
+// let str1="";
+// let mask="";
+// for(let i=0;i<arr.length;i++){
+
+//     let ans=arr[i].split("");
+//     let flag=false;
+//     let flag2=false
+//     for(let j=0;j<ans.length;j++){
+
+//         if(ans[j]!=0){
+            
+//             flag=true;
+//         }
+//         if(ans[j]=="/"){
+//             flag2=true;
+//         }
+//         if(flag===true&&flag2==false){
+            
+//            str1+=ans[j] 
+//         }
+//         if(flag===false&&flag2===true){
+//             mask+=ans[j]
+//         }
+
+//     }
+//     str1+="."
+// }
+// console.log(str1)
+
+// console.log(mask)
+// output 
+// ip: 9200.16800.1000.0 
+// mask: 24
+
+
+
+
+
+//
+//'abcabcjbudfbcabchcabccabbcabcvxgaxacbabcc'
+//Count how many times 'abc' is present in above string
+// var str = 'abcabcjbudfbcabchcabccabbcabcvxgaxacbabcc'
+// var count =0
+// var ans = ""
+// for(var i = 2;i<str.length;i++){
+//     ans+=str[i-2]+str[i-1]+str[i]
+//   if(ans =="abc"){
+//     count++
 //   }
-  
+//  ans= ""
+// }
+// console.log(count)
+
+
+// var arr = [0,1,1,1,1]
+
+// var sum = 0
+// for(var i = 0; i < arr.length; i++) {
+//     if(arr[i] == 1) {
+//         sum += i + 1
+//     }
+// }
 // console.log(sum)
 
-  
+
+// merge two sorted Array❗❗❗❗❗❗
+var arr1 = [1, 3, 4, 5, 6, 8];
+var arr2 = [4, 6, 8, 9, 11];
+function mergeSortedArrays(arr1, arr2){
+   var res = [];
+   let i = 0;
+   let j = 0;
+   while(i < arr1.length && j < arr2.length){
+      if(arr1[i] < arr2[j]){
+         res.push(arr1[i]);
+         i++;
+      }else{
+         res.push(arr2[j]);
+         j++;
+      }
+   };
+   while(i < arr1.length){
+      res.push(arr1[i]);
+      i++;
+   };
+   while(j < arr2.length){
+      res.push(arr2[j]);
+      j++;
+   };
+   return res;
+};
+console.log(mergeSortedArrays(arr1, arr2));
 
 
-ans = ""
-var str = "mohan is good student"
+//make substring and find all palindrome
+
+let str = "abcdcbce"
+    function check(str){
+
+        let i =0
+        let j =str.length-1
+        while(i<j){
+            if(str[i++]!==str[j--]){
+                return false
+            }
+    }
+    return true
+
+    }
+    for(let i =0;i<str.length;i++){    //substring make
+        let bag = ""
+        for(let j =i;j<str.length;j++){
+            bag+=str[j]
+            if(check(bag)){
+                console.log(bag)
+            }
+        }
+    }
+    // check(str)
+
+
+
+
+    // given longest substring and contains "0" in max times
+
+    var count =0
+    var max =  0
+    
+    var arr = "112300451"
+    for(var i = 0; i<arr.length;i++){
+if(arr[i]=="0"){
+    count++
+ max = Math.max(max,count)
+}
+else{
+    count =0
+}
+
+    }
+console.log(max)
+
+
+// how count all upper case and lower and number
+
+var str = "ABhvhvd568"
+var alpha= 0
+var small = 0
+var number = 0
 for(var i =0;i<str.length;i++){
-  if(str[i]!==" "){
-    ans+=str[i]
-  }
-  else{
-    console.log(ans)
-    ans= ""
+    if(str[i]>="A" && str[i]<="Z"){
+        alpha++
+
+    }
+    else if(str[i]>="a" && str[i]<="z"){
+        small++
+    }
+    else if(str[i]>="0" && str[i]<="9"){
+        number++
+    }
+}
+console.log(alpha);
+console.log(small);
+console.log(number);
+
+
+
+
+//make substring and find all palindrome and maxximum length of palindrome
+
+
+let S = "abcdcbce"
+let arr = []
+for(let i =0;i<S.length;i++){
+    let res = ""
+    for(let j =i;j<S.length;j++){
+        res+=S[j]
+        // console.log(res)
+        
+        let red = res.split("").reverse().join("")
+        if(red==res){
+            arr.push(res.length)
+            console.log(res)
+            
+        }
+    
+}
+    
+}
+console.log(Math.max(...arr))
+
+
+
+
+// Single Number Quesrion find unique
+
+let arr = [4,1,2,1,2]
+// output = 4
+
+let res = {}
+
+for(let i =0;i<arr.length;i++){
+
+    if(res[arr[i]] != undefined) {
+        res[arr[i]]++
+    } else{
+        res[arr[i]] = 1
+    }
+
+}
+
+for(var i in res) {
+    if(res[i] == 1) {
+        console.log(i)
+    }
+}
+
+
+
+
+// find the next and advanced number 
+
+let  arr = [10, 9, 8, 7, 7, 7, 5, 5]
+
+let  n = 8
+let k = 5
+count = 0;
+for (i=0;i<arr.length;i++){
+  if (arr[i] >= arr[k-1] && arr[i] > 0) {
+    //   console.log(arr[i]+"b"+arr[k-1])
+      count++
   }
 }
+console.log(count)
