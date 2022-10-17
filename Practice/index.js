@@ -3150,3 +3150,35 @@ for (i=0;i<arr.length;i++){
   }
 }
 console.log(count)
+
+
+// Two sum
+ 
+let arr = [2, 7, 11, 15]
+let target = 9
+
+for(let i =0;i<arr.length;i++){
+    for(let j =i+1;j<arr.length;j++){
+        if(arr[i]+arr[j] == target){
+            console.log(i,j)
+        }
+    }
+}
+
+// var longestCommonPrefix = function(strs) {
+    let strs = ["flower","flow","flight"]
+    if (strs.length === 0) 
+    // return '';
+    console.log('')
+    let r = '';
+    for (let i = 0; i < strs[0].length; i++) {
+      for (let j = 1; j < strs.length; j++) {
+        if (strs[0][i] !== strs[j][i])
+        //  return r;
+        console.log(r)
+      }
+      r += strs[0][i];
+    }
+    // return r;
+    console.log(r)
+//   };
