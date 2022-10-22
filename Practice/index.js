@@ -453,20 +453,20 @@ console.log(arr[0])
 // #############
 // this another way converts in the upper to lower and lower to upper
 
-// var str = "HeLLoW"
-// var res=""
-//   for(var i = 0;i<str.length;i++){
-//       var k= str[i]
+var str = "HeLLoW"
+var res=""
+  for(var i = 0;i<str.length;i++){
+      var k= str[i]
 
-//     if(str[i]==str[i].toLowerCase()){
-//         // console.log(str[i])
-//         res+=str[i].toUpperCase()
-//     }
-//     else{
-//         res+=str[i].toLowerCase()
-//     }
-//   }
-// console.log(res)
+    if(str[i]==str[i].toLowerCase()){
+        // console.log(str[i])
+        res+=str[i].toUpperCase()
+    }
+    else{
+        res+=str[i].toLowerCase()
+    }
+  }
+console.log(res)
 
 
 // try again same Question
@@ -3166,19 +3166,80 @@ for(let i =0;i<arr.length;i++){
 }
 
 // var longestCommonPrefix = function(strs) {
-    let strs = ["flower","flow","flight"]
-    if (strs.length === 0) 
-    // return '';
-    console.log('')
-    let r = '';
-    for (let i = 0; i < strs[0].length; i++) {
-      for (let j = 1; j < strs.length; j++) {
-        if (strs[0][i] !== strs[j][i])
-        //  return r;
-        console.log(r)
+    // var longestCommonPrefix = function (strs) {
+        // console.log(strs[i+2][j]);
+    let strs = ["flower", "flow", "flight"];
+
+      for (let i = 0; i < strs.length; i++) {
+        for (let j = 0; j < strs[i].length; j++) {
+          if (strs[i][j] == strs[i + 1][j] && strs[i + 1][j] ==strs[i + 2][j]) {
+            console.log(strs[i][j]);
+            
+          } else {
+        //     console.log(-1)
+        //   }
+        }
       }
-      r += strs[0][i];
+    
+    // console.log(longestCommonPrefix(strs));
+
+
+
+
+    // longest substring without repecting char 
+    let arr = "abcabdcabc"
+
+var max = 0
+let ans = ""
+for(let i =0;i<arr.length;i++){
+    if(!ans.includes(arr[i])) {
+        ans += arr[i]
+        max = Math.max(max, ans.length)
+    } else {
+        ans = arr[i]
     }
-    // return r;
-    console.log(r)
-//   };
+}
+
+console.log(max)
+
+
+
+
+
+// 3rd maiximum Number
+
+
+let arr = [1, 2]
+arr.sort((a,b)=>b-a)
+// console.log(arr)
+let count = 0
+
+for(let i =0;i<arr.length;i++){
+    if(arr[i]!==arr[i+1]){
+count++
+if(count==3){
+    console.log(arr[i])
+}
+    }
+    
+}
+
+
+// Count Number of Pairs With Absolute Difference K
+
+
+let arr = [3,2,1,5,4]
+
+ let k = 2
+ let count =0
+
+ for(let i =0;i<arr.length;i++){
+    for(let j =i+1;j<arr.length;j++){
+        if(Math.abs(arr[j]-arr[i])==k){
+            count++
+        }
+        
+        
+    }
+}
+console.log(count);
