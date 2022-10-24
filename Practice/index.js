@@ -3274,13 +3274,31 @@ var largest = numbers[0];
 var smallest = numbers[0];
 
 for (var i = 1; i < numbers.length; i++) {
+    
+    if (numbers[i] > largest) {
+        largest = numbers[i];
+    } else if (numbers[i] < smallest) {
+        smallest = numbers[i];
+    }
+    
+}
+console.log(largest);
+console.log(smallest);
 
-  if (numbers[i] > largest) {
-    largest = numbers[i];
-  } else if (numbers[i] < smallest) {
-    smallest = numbers[i];
-  }
+
+
+//other way same low and high number find
+
+let arr = [2, 4, 9, 2, 0, 16, 24]
+arr.sort((a,b)=>a-b)
+console.log(arr[0])
+
+for(let i =0;i<arr.length;i++){
+if(arr[0]<arr[i]){
+arr[0] = arr[i]
 
 }
-  console.log(largest);
-  console.log(smallest);
+}
+console.log(arr[0])
+
+
