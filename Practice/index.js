@@ -2958,17 +2958,17 @@ console.log(sum)
 //
 //'abcabcjbudfbcabchcabccabbcabcvxgaxacbabcc'
 //Count how many times 'abc' is present in above string
-// var str = 'abcabcjbudfbcabchcabccabbcabcvxgaxacbabcc'
-// var count =0
-// var ans = ""
-// for(var i = 2;i<str.length;i++){
-//     ans+=str[i-2]+str[i-1]+str[i]
-//   if(ans =="abc"){
-//     count++
-//   }
-//  ans= ""
-// }
-// console.log(count)
+var str = 'abcabcjbudfbcabchcabccabbcabcvxgaxacbabcc'
+var count =0
+var ans = ""
+for(var i = 2;i<str.length;i++){
+    ans+=str[i-2]+str[i-1]+str[i]
+  if(ans =="abc"){
+    count++
+  }
+ ans= ""
+}
+console.log(count)
 
 
 // var arr = [0,1,1,1,1]
@@ -3243,3 +3243,44 @@ let arr = [3,2,1,5,4]
     }
 }
 console.log(count);
+
+
+// Check If Two String Arrays are Equivalent
+
+let word1 = ["ab", "c"]
+let word2 = ["a", "bc"]
+
+let res = word1.join("")==word2.join("")
+console.log(res)
+
+
+// maximum product diff two pair 
+
+let arr = [4,2,5,9,7,4,8]
+arr.sort((a,b)=>a-b)
+console.log(arr);  //2 4 4 5 7 8 9
+
+let res = arr[arr.length-1]*arr[arr.length-2] -arr[0]*arr[1]
+console.log(res)
+
+
+
+
+// find the lowest and highest number
+
+numbers = [2, 4, 9, 2, 0, 16, 24]
+
+var largest = numbers[0];
+var smallest = numbers[0];
+
+for (var i = 1; i < numbers.length; i++) {
+
+  if (numbers[i] > largest) {
+    largest = numbers[i];
+  } else if (numbers[i] < smallest) {
+    smallest = numbers[i];
+  }
+
+}
+  console.log(largest);
+  console.log(smallest);
