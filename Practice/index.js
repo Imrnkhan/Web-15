@@ -3302,3 +3302,51 @@ arr[0] = arr[i]
 console.log(arr[0])
 
 
+
+
+
+// Second largest number
+
+let arr = [3,5,6,7,834,56,78,98]
+arr.sort((a,b)=>a-b)
+console.log(arr[1])
+
+console.log(arr[arr.length-2])
+
+
+
+
+// find the missing vovel in given String 
+
+function checkMissing(s) {
+    let str = "nature"
+    let vowels = "aeiou";
+    s.split("").forEach(function(letter) {
+      vowels = vowels.replace(letter, "");
+   
+    })
+    return {vowels};
+  }
+  let missing = checkMissing("nature");
+  console.log("Missing vowels: " + missing.vowels);
+
+  
+
+
+
+// Count Number of Vowels in a String 
+
+	
+		let str = "nature";
+		str = str.toLowerCase();
+		let count = 0;
+
+		for (let i = 0; i < str.length; i++) {
+	if (str.charAt(i) == 'a' || str.charAt(i) == 'e'|| str.charAt(i) == 'i'|| str.charAt(i) == 'o'|| str.charAt(i) == 'u') {
+				count++;
+			}
+		}
+
+		console.log(count)
+	
+
