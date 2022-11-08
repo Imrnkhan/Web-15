@@ -3209,7 +3209,7 @@ console.log(max)
 // 3rd maiximum Number
 
 
-let arr = [1, 2]
+let arr = [3,2,1]
 arr.sort((a,b)=>b-a)
 // console.log(arr)
 let count = 0
@@ -3318,20 +3318,28 @@ console.log(arr[arr.length-2])
 
 // find the missing vovel in given String 
 
-function checkMissing(s) {
-    let str = "nature"
-    let vowels = "aeiou";
-    s.split("").forEach(function(letter) {
-      vowels = vowels.replace(letter, "");
-   
-    })
-    return {vowels};
-  }
-  let missing = checkMissing("nature");
-  console.log("Missing vowels: " + missing.vowels);
+let str = "nature"
+var arr = []
+var vowel = "aeiou"
+var ans = ""
 
-  
 
+for(var i = 0; i < str.length; i++) {
+    if(str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u") {
+        arr.push(str[i])
+    }
+}
+
+//console.log(arr)
+
+for(var i = 0; i < vowel.length; i++) {
+    //console.log(arr.indexOf(vowel[i]))
+    if(arr.indexOf(vowel[i]) == -1) {
+        ans += vowel[i]
+    }
+}
+
+console.log(ans)
 
 
 // Count Number of Vowels in a String 
@@ -3350,3 +3358,153 @@ function checkMissing(s) {
 		console.log(count)
 	
 
+
+
+
+        let arr = [5,4]
+        for(let i =0;i<arr.length;i++){
+            if(arr[i]-arr[i+1]){
+                console.log(arr)
+            }
+        }
+
+
+        // Count Equal and Divisible Pairs in an Array
+             let arr = [3,1,2,2,2,1,3]
+             let k = 2
+                let count = 0;
+                for (let i = 0; i < arr.length - 1; i++) {
+                    for (let j = i + 1; j < arr.length; j++) {
+                        if ((arr[i] == arr[j]) && ((i * j) % k == 0)) {
+                            count++;
+                        }
+                    }
+                }
+               console.log(count);
+        
+
+
+// Find minimum positive integer x such that a(x^2) + b(x) + c >= k
+
+               
+               let a = 3
+               let b = 2
+               let c = 4
+               let k = 15
+
+     let x = Number.MAX_VALUE;
+   
+    if (k <= c)
+        return 0;
+   
+    let h = k - c;
+    let l = 0;
+   
+    // Binary search to find the value of x
+    while (l <= h)
+    {
+        let m = Math.floor((l + h) / 2);
+        if ((a * m * m) + (b * m) > (k - c))
+        {
+            x = Math.min(x, m);
+            h = m - 1;
+        }
+        else if ((a * m * m) + (b * m) < (k - c))
+            l = m + 1;
+        else
+            // return m;
+            console.log(m)
+    }
+   
+    // Return the answer
+    // return x;
+    console.log(x)
+
+
+
+
+
+//  Find Peak Element by frute force 
+
+let arr = [10, 20, 11]
+
+     let max=arr[0];
+     let min=0;
+     for(let i=0;i<arr.length;i++){
+      if(max<arr[i]){
+          max=arr[i];
+          min=i;
+      }
+     }
+    console.log(min);
+    
+
+// remove duplicate sorted array and unsoreted
+
+let arr = [1,2,5,4,6,3,5,7,5,2]
+arr.sort((a,b)=>a-b)
+
+let res =0
+for (let i = 0; i < arr.length; i++) {
+   if(arr[i-1]!=arr[i]){
+    arr[res]=arr[i]
+    res++
+   }
+}
+console.log(arr.slice(0,res))
+console.log(res); // count
+
+
+    
+
+
+	
+
+
+    // remove the elements which do not follow an increasing order.
+
+		// l stores the index
+        let ans = []
+        let arr = [ 10, 12, 9, 10, 2, 13, 14 ];
+		let pr = 1;
+		for (let i = 1; i < arr.length; i++) {
+			if (arr[pr- 1] <= arr[i]) {
+				arr[pr] = arr[i];
+				pr++;
+			}
+		}
+
+		// Print the sorted array
+		for (let i = 0; i < pr; i++){
+
+            ans.push(arr[i])
+        }
+        console.log(ans.join(" "));
+	
+	
+	
+
+
+        // Rotate the array returns back
+
+let nums = [ 1, 2, 3]
+let k =1
+
+    for (let i = 0; i < k; i++) {
+        for (let j = nums.length - 1; j > 0; j--) {
+        // move each number by 1 place
+        let temp = nums[j];
+        nums[j] = nums[j - 1];
+        nums[j - 1] = temp;
+        }
+      
+        // console.log(i+1)
+    } 
+    console.log(nums);
+         
+
+
+   
+
+
+    
