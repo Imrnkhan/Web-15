@@ -3290,7 +3290,7 @@ console.log(smallest);
 //other way same low and high number find
 
 let arr = [2, 4, 9, 2, 0, 16, 24]
-arr.sort((a,b)=>a-b)
+arr.sort((a,b)=>b-a)
 console.log(arr[0])
 
 for(let i =0;i<arr.length;i++){
@@ -3313,6 +3313,20 @@ console.log(arr[1])
 
 console.log(arr[arr.length-2])
 
+// other way 
+
+let arr= [10, 20, 25, 63, 96, 57];
+   
+   for(let i = 0; i<arr.length; i++ ){
+      for(let j = i+1; j<arr.length; j++){
+         if(arr[i]>arr[j]){
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+         }
+      }
+   }
+   console.log("Third largest number is:: "+arr[arr.length-3]);
 
 
 
@@ -3504,7 +3518,117 @@ let k =1
          
 
 
+  let arr = [3,2,3]
+
+  arr.sort((a,b)=>a-b)
+  console.log(arr[arr.length/3])
+
+
+
+//   You are given a array A of integers.
+//   You need to find maximum possible value of( i - j )where A[i]=A[j].
+
+let arr = [1, 1, 1, 1, 1]
+let ans = 0
+for(let i =0;i<arr.length;i++){
+for(let j =0;j<arr.length;j++){
+    ans = Math.max(ans,
+        Math.abs(arr[i] - arr[j])+(i - j));
+
+    }
+}
+console.log(ans)
+
+
+//JavaScript program to print prime numbers from 1 to 100 using for loop
+
+let isPrime = true;
+ 
+// console.log("Prime numbers from 1 to 100 are: ");
+ let n =100
+for(let i=2; i <n; i++){
+  for(let j=2; j < i - 1; j++){
+    if(i % j == 0){
+      isPrime = false;
+      break;
+    }
+  }
+  if(isPrime){
+    console.log(i);
+  }
+  isPrime = true;
+}
+
+
+// 3rd largest number 
+
+let arr= [10, 20, 25, 63, 96, 57];
+   
+   for(let i = 0; i<arr.length; i++ ){
+      for(let j = i+1; j<arr.length; j++){
+         if(arr[i]>arr[j]){
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+         }
+      }
+   }
+   console.log("Third largest number is:: "+arr[arr.length-3]);
    
 
+// swap with out 3rd varible 
+
+let x = 23
+let y = 45
+
+  x = x + y;   
+ y = x - y;   
+  x = x - y;  
+console.log(x)
+console.log(y)
+
+
+
+
+// let salary = [4000,3000,1000,2000]
+let salary = [1000,2000,3000]
+ let avg = 0
+    salary.sort((a,b) => a-b)
+    for(let i=1; i<salary.length-1; i++){
+        
+    
+    avg += salary[i]
+    }
+    console.log(avg/2)
+
+
+
+
+
+    // find the duplicate number 
+    // There is only one repeated number 
+
+     
 
     
+    let arr = [54,32,5,11,35,32,32,17,3,3,22,4,1,6,11];
+    arr.sort((a,b)=>a-b)
+    // console.log(arr)
+
+    let ans = [];
+
+    for(let i = 0; i < arr.length; i++) {
+
+         
+        for (let j  = i+1; j < arr.length; j++) {
+            if ( (arr[i] === arr[j]) && (i !== j) ) {
+                ans.push(arr[i])
+            }
+        }
+    }
+
+   
+    console.log(ans)
+
+
+
