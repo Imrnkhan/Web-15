@@ -1557,6 +1557,8 @@ for(var i = 0;i<str.length;i++){
                         res.push(a.length)
                 }
         }
+
+
 }
 console.log(Math.max(...res))
 
@@ -2185,6 +2187,18 @@ for(var i =0;i<arr.length;i++){
         break;
     }
 }
+
+// other way  missing number
+let nums =[3,0,1]
+let sum = 0
+let total = 0
+for(let i = 0; i < nums.length; i++) {
+    sum += nums[i]
+    total += i + 1
+}
+console.log(total - sum)
+
+
 
 // // Array to String ❗❗❗❗❗❗
 // minus value  consider as 0‼️‼️‼️❗❗
@@ -2848,25 +2862,25 @@ console.log(sum)
 
 
 
-
+//reverse string
 
 
 // Input: "Welcome to this Java!"; 
 // Output : "emocleW ot siht !avaJ"
 
 
-// var str = "Welcome to this Java!"; 
-// var demo =[]
-// let res = str.split(" ").reverse()
-// for(var i =0;i<res.length;i++){
-//    var str1 = res[i].split("").reverse().join("")
-//    demo.push(str1)
+var str = "Welcome to this Java!"; 
+var demo =[]
+let res = str.split(" ").reverse()
+for(var i =0;i<res.length;i++){
+   var str1 = res[i].split("").reverse().join("")
+   demo.push(str1)
 
-// }
+}
 
 
 
-// console.log(demo.reverse().join(" "))
+console.log(demo.reverse().join(" "))
 
 
 
@@ -2955,7 +2969,7 @@ console.log(sum)
 
 
 
-//
+// String occurence many time
 //'abcabcjbudfbcabchcabccabbcabcvxgaxacbabcc'
 //Count how many times 'abc' is present in above string
 var str = 'abcabcjbudfbcabchcabccabbcabcvxgaxacbabcc'
@@ -3101,8 +3115,8 @@ for(let i =0;i<S.length;i++){
             console.log(res)
             
         }
-    
-}
+        
+    }
     
 }
 console.log(Math.max(...arr))
@@ -3629,6 +3643,234 @@ let salary = [1000,2000,3000]
 
    
     console.log(ans)
+
+
+
+
+
+
+
+
+//  Find Most Frequent Element in an Array
+
+
+
+    let arr = [54,32,5,11,35,11,11,32,32,17,3,3,22,4,1,6,11];
+let max = 0
+let most = -1
+for(let i =0;i<arr.length;i++){
+    let count =1
+    for(let j =0;j<arr.length;j++){
+        if(arr[j]==arr[i]){
+            count = count+1
+        }
+        if(max<count){
+            max = count
+            most = arr[i]
+        }
+        else if(max==count){
+            most = Math.max(most,arr[i])
+        }
+    }
+}
+console.log(most)
+
+
+// same way 
+
+
+let arr = [54,32,5,11,35,1,1,32,32,17,3,3,22,4,1,6,1];
+let max = 0
+let most = -1
+for(let i =0;i<arr.length;i++){
+    let count =0
+    for(let j =0;j<arr.length;j++){
+        if(arr[i]==arr[j]){
+            count = count+1
+        }
+        if(max<count){
+            max = count
+            most = arr[i]
+        }
+
+    }
+}
+console.log(most)
+//         else if(max==count){
+//             most = Math.max(most,arr[i])
+//         }
+//     }
+// }
+// console.log(most)
+
+
+
+
+let nums = [-1,2,-3,3]
+nums.sort((a,b)=>a-b)
+    for(let i =0;i<nums.length;i++){
+        for(let j =nums.length-1;j>=0;j--){
+            if(nums[i]+nums[j]==0){
+                console.log(nums[j])
+            }
+        }
+    }
+
+
+// liner search  // it means every time serch elemt of goes end tak
+
+   let nums = [-1,0,3,5,9,12]
+   nums.sort((a,b)=>a-b)
+   let target = 9
+   for(let i =0;i<nums.length;i++){
+if(target==nums[i]){
+    console.log(i)
+
+}
+   }
+
+
+
+//    ref = sr866888882    
+//    ref = 866890243
+
+
+
+
+// Rotate Array in js 
+
+
+let arr = [1,2,3,4,5,6,7];
+let k =3
+for(let i =0;i<k;i++){
+    arr.unshift(arr.pop())  // unshift add element on head an pop remove last
+}
+console.log(arr.join(" "))
+
+
+
+// Selection sort 
+
+let arr = [5,6,3,4,9,8]
+
+for(let i =0;i<arr.length;i++){
+    let min = i
+    for(let j =i+1;j<arr.length;j++){
+        if(arr[min]>arr[j]){
+            min = j
+        }
+    }
+    let temp = arr[min]
+    arr[min] = arr[i]
+    arr[i] = temp
+}
+console.log(arr)
+
+
+//  Squares of a Sorted Array
+
+
+let arr = [-4,-1,0,3,10]
+for(let i =0;i<arr.length;i++){
+    arr[i] = arr[i]*arr[i]
+}
+arr.sort((a,b)=>a-b)
+console.log(arr)
+
+
+
+
+// Kth Largest Element in an Array
+// Time Complexity = (O(N) + (N-K+1 Log N-K+1)) => O(NLogN)
+// Space Complexity = O(K+1) => O(K)
+
+let arr = [3,2,1,5,6,4]
+let k = 2
+for(let i =0;i<k;i++){
+    for(let j =0;j<arr.length-i-1;j++){
+if(arr[j]>arr[j+1]){
+    let temp = arr[j]
+    arr[j] = arr[j+1]
+    arr[j+1]= temp
+}
+    }
+}
+console.log(arr[arr.length-k])
+
+
+
+
+// reverse string 
+
+
+let s = ["h","e","l","l","o"]
+    let left = 0
+    right = s.length - 1;
+    while (left < right) {
+        let temp = s[left];
+        s[left] = s[right];
+        s[right] = temp;
+        ++left;
+        --right;
+    }
+    console.log(s)
+
+
+
+
+var str = 'ZABCDBABCQ'
+var count =0
+var ans = ""
+for(var i = 2;i<str.length;i++){
+    ans+=str[i-2]+str[i-1]+str[i]
+  if(ans =="ABC"){
+    count++
+  }
+ ans= ""
+}
+console.log(count)
+
+
+
+
+//   1  // count duplicate frist_name
+
+// SELECT first_name, COUNT(first_name) FROM contacts GROUP BY first_name HAVING  COUNT(first_name) > 1;
+    
+//  2   // count duplicate last_name
+
+
+// SELECT last_name, COUNT(last_name) FROM contacts GROUP BY last_name HAVING  COUNT(last_name) > 1;
+   
+//  3  // count duplicate email 
+
+
+// SELECT email, COUNT(email) FROM contacts GROUP BY email HAVING  COUNT(email) > 1;
+
+
+//   4  // using multiple duplicate case 
+
+// SELECT first_name, COUNT(first_name),
+    // last_name, COUNT(last_name),
+    // email, COUNT(email) FROM contacts GROUP BY
+    // first_name,
+    // last_name,
+    // email HAVING 
+    //  COUNT(first_name) > 1
+    //  AND COUNT(last_name) > 1
+    //  AND COUNT(email) > 1;
+    
+    
+    
+    // delete duplicate case
+    
+    
+
+        // delete t1 from contacts t1 inner join contacts t2 WHERE 
+        // t1.id < t2.id and
+        // t1.first_name = t2.first_name AND
+        // t1.last_name = t2.last_name and
+        // t1.email = t2.email;
 
 
 

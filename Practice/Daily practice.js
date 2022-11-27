@@ -126,62 +126,55 @@ console.log(details)
 // function fizzbuzz(arr){
 
 
-
-    // var count = 0
-    // for(var i =0;i<arr.length;i++){
-        //     // for(var j =0;j<arr.length;j++){
-            //         // if(arr[i]==arr[j]){
-                //             if(arr[i] =="")
-                //             count++
-                //         }
+            //   ? count number off occurs  
                 
-                // console.log(count)
-                
-                
-//                 var arr = [1,2,5,6,45,6,6]
-//                 arr.sort((a,b)=>a-b)
+                var arr = [1,2,5,6,45,6,6]
+                arr.sort((a,b)=>a-b)
             
-//     const count = {};
+    const count = {};
 
-// for (let i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i++) {
 //   const element = arr[i];
 
-//   if (count[element]) {
-//     count[element] += 1;
-//   } else {
-//     count[element] = 1;
-//   }
-// }
+  if (count[arr[i]]) {
+    count[arr[i]] += 1;
+  } else {
+    count[arr[i]] = 1;
+  }
+}
 
-// console.log(count);
-
-
-
-
-// var arr =[1,4,4,2,4,1,2,4,1,4,5,6,7,4,5,4,5] 
-// var obj ={}
+console.log(count);
 
 
 
-// for(var i =0;i<arr.length;i++){
+
+// same 
+
+
+var arr =[1,4,4,2,4,1,2,4,1,4,5,6,7,4,5,4,5] 
+var obj ={}
+
+
+
+for(var i =0;i<arr.length;i++){
    
-//     if(obj[arr[i]]==undefined){
-//         obj[arr[i]]=1
+    if(obj[arr[i]]==undefined){
+        obj[arr[i]]=1
 
-//     }
-//     else{
-//         obj[arr[i]]++
-//     }
-// }
-// console.log(obj)
+    }
+    else{
+        obj[arr[i]]++
+    }
+}
+console.log(obj)
 
-// var max =  0
-// for(key in obj){
-// if(obj[key]>max){
-//     max = obj[key]
-// }
-// }
-// console.log(max)
+var max =  0
+for(key in obj){
+if(obj[key]>max){
+    max = obj[key]
+}
+}
+console.log(max)
 
 
 // var anssum =0
@@ -421,29 +414,81 @@ console.log(-1)
 
 
 
+// pattren 
 
-let n = 5;
-let string = "";
+// let n = 5;
+// let string = "";
 
-for (let i = 1; i <= n ; i++) {
-  for (let j = 0; j < i; j++) {
-    string += " ";
-  }
-  for (let k = 0; k <=n - i; k++) {
-    string += "*";
-  }
-  string += "\n";
+// for (let i = 1; i <= n ; i++) {
+//   for (let j = 0; j < i; j++) {
+//     string += " ";
+//   }
+//   for (let k = 0; k <=n - i; k++) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+
+
+
+
+// remove element those not equal val 
+// 2,2
+
+let nums = [3,2,2,3]
+let val = 3
+
+let left = 0;
+let right = nums.length - 1;
+
+while (left <= right) {
+    if (nums[left] === val) {
+        nums[left] = nums[right];
+        right--;
+    }
+    else {
+        left++;
+    }
 }
-console.log(string);
+
+console.log(left)
+
+// other way remove element
+
+let arr =   [ [ 1, 2, 3, 4 ],
+              [ 5, 6, 7, 8 ],
+              [ 9, 10, 11, 12 ],
+              [ 13, 14, 15, 16 ]];
+
+              let n =4
+              let m =4
+              for(let i =0;i<m;i++){
+                for(let j =0;j<n;j++){
+
+                    if (i == 0 || j == 0 || i == m - 1 || j == n - 1){
+                        console.log(arr[i][j])
+                    }
 
 
-
-
-
-
-
-
-
-
-
-
+                }
+            }
+                    // if(i==0){
+                    //     console.log(arr[i][j]+" ")
+                    // }
+                    // else if(i==m-1){
+                    //     console.log(arr[i][j]+" ")
+                    // }
+                    // else if(j==0){
+                    //     console.log(arr[i][j]+" ")
+                    // }
+                    // else if(j==n-1){
+                    //     console.log(arr[i][j]+" ")
+                    // }
+                    // else{
+                    //     console.log(" ")
+                    // }
+                    // console.log("")
+                // }
+            //   }
