@@ -298,20 +298,22 @@ console.log(max)
 
 
 
-    //   let arr1 = [1,5,6,4,12,3]
-    //   let arr2 = [1,2,36,5,45,4]
-    //   let count = 0
+    // Array both common
 
-    //   for(let i =0;i<arr1.length;i++){
-    //     for(let j =0;j<arr2.length;j++){
-    //         if(arr1[i]==arr2[j]){
-    //             count++
+      let arr1 = [1,5,6,4,12,3]
+      let arr2 = [1,2,36,5,45,4]
+      let count = 0
 
-    //             console.log(arr1[i])
-    //         }
-    //     }
-    // }
-    // console.log("count : " +""+count)
+      for(let i =0;i<arr1.length;i++){
+        for(let j =0;j<arr2.length;j++){
+            if(arr1[i]==arr2[j]){
+                count++
+
+                console.log(arr1[i])
+            }
+        }
+    }
+    console.log("count : " +""+count)
 
 
 
@@ -474,21 +476,41 @@ let arr =   [ [ 1, 2, 3, 4 ],
 
                 }
             }
-                    // if(i==0){
-                    //     console.log(arr[i][j]+" ")
-                    // }
-                    // else if(i==m-1){
-                    //     console.log(arr[i][j]+" ")
-                    // }
-                    // else if(j==0){
-                    //     console.log(arr[i][j]+" ")
-                    // }
-                    // else if(j==n-1){
-                    //     console.log(arr[i][j]+" ")
-                    // }
-                    // else{
-                    //     console.log(" ")
-                    // }
-                    // console.log("")
-                // }
-            //   }
+                 
+
+
+
+
+            // Getting the frequency of an element in an array in JavaScript
+
+
+            const letters = ["a", "b", "c", "a", "b", "c", "a", "b"];
+            const count = {};
+            letters.forEach(e => count[e] ? count[e]++ : count[e] = 1 );
+            
+            console.log(count) // {"a" : 1, "b" : 1, "c" : 1}
+
+// other way 
+            
+            a    = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
+            result = { };
+            for(var i = 0; i < a.length; ++i) {
+                if(!result[a[i]])
+                    result[a[i]] = 0;
+                result[a[i]]++;
+            }
+            console.log(result)
+
+
+
+
+            // count frqequcny 
+
+
+            let arr = [1,3,4,5,6,77,3,4,5,5]
+            flag = false
+
+            
+
+
+            // https://oj.masaischool.com/contest/6045/problem/01

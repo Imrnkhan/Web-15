@@ -546,19 +546,19 @@ else console.log("no")
 // #######
 // check Palindrome "Yes" and "No"
 
-// var res = []
-// str = "mama"
-// for(var i = str.length-1;i>=0;i--){
-//     res.push(str[i])
-// }
-// for(var i= 0;i<str.length;i++){
-//     if(str[i] != res[i]){
+var res = []
+str = "mama"
+for(var i = str.length-1;i>=0;i--){
+    res.push(str[i])
+}
+for(var i= 0;i<str.length;i++){
+    if(str[i] != res[i]){
 
-// console.log("No")
-// return;
-//     }
-// }
-// console.log("Yes")
+console.log("No")
+return;
+    }
+}
+console.log("Yes")
 
 // how to check the Get in the function
 // const fruits = new Map([
@@ -2796,7 +2796,7 @@ var n = 9999
 
 var arr = [55, 44, 65,1,2,3,3,34,5];
 arr.sort((a,b)=>a-b)
-let res =1
+let res = 1
 for (let index = 1; index < arr.length; index++) {
    if(arr[index-1]!=arr[index]){
     arr[res]=arr[index]
@@ -3600,6 +3600,7 @@ let y = 45
   x = x - y;  
 console.log(x)
 console.log(y)
+console.log(x)
 
 
 
@@ -3674,7 +3675,7 @@ for(let i =0;i<arr.length;i++){
     }
 }
 console.log(most)
-
+ 
 
 // same way 
 
@@ -3833,44 +3834,65 @@ console.log(count)
 
 
 
-//   1  // count duplicate frist_name
-
-// SELECT first_name, COUNT(first_name) FROM contacts GROUP BY first_name HAVING  COUNT(first_name) > 1;
-    
-//  2   // count duplicate last_name
+// Count frequency of each element in the array occurences
 
 
-// SELECT last_name, COUNT(last_name) FROM contacts GROUP BY last_name HAVING  COUNT(last_name) > 1;
-   
-//  3  // count duplicate email 
+let arr = [3,2,1,5,6,4,4,5,6]
+for(let i =0;i<arr.length;i++){
+    let count =1
+    for(let j =i+1;j<arr.length;j++){
+        if(arr[i]==arr[j]){
+            count++
+        }
+    }
+    console.log(arr[i]+" - "+count)
+}
 
 
-// SELECT email, COUNT(email) FROM contacts GROUP BY email HAVING  COUNT(email) > 1;
-
-
-//   4  // using multiple duplicate case 
-
-// SELECT first_name, COUNT(first_name),
-    // last_name, COUNT(last_name),
-    // email, COUNT(email) FROM contacts GROUP BY
-    // first_name,
-    // last_name,
-    // email HAVING 
-    //  COUNT(first_name) > 1
-    //  AND COUNT(last_name) > 1
-    //  AND COUNT(email) > 1;
-    
-    
-    
-    // delete duplicate case
-    
-    
-
-        // delete t1 from contacts t1 inner join contacts t2 WHERE 
-        // t1.id < t2.id and
-        // t1.first_name = t2.first_name AND
-        // t1.last_name = t2.last_name and
-        // t1.email = t2.email;
+// unique 
+// count frequency 
+// majority
+// two pointer 
 
 
 
+
+// String gap palindrome and remove and check
+
+  var res = []
+  str = "A man, a plan, a canal: Panama"
+
+  str = str.toLowerCase().replace(/[^a-z\d]/g, '');
+  for(var i = str.length-1;i>=0;i--){
+      res.push(str[i])
+  }
+  for(var i= 0;i<str.length;i++){
+      if(str[i] != res[i]){
+  
+  console.log("No")
+  return;
+      }
+  }
+  console.log("Yes")
+  
+
+
+
+
+//   power of Two 
+
+let n = 2
+let ans = 1
+if(n<2){
+    console.log(false);
+}
+
+for(let i =0;i<n;i++){
+ans*=2
+if(ans==2){
+    console.log(true);
+}
+if(ans<n){
+    console.log(false)
+}
+}
