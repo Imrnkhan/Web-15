@@ -754,21 +754,22 @@ console.log(count,str.length-count)
 // }
 
 // Use the same function to print Non-Primes from 2 to a given limit
-// function isPrime(num){
-//     var res = 0
-//     for(var i = 1;i<=num;i++){
-//         if(num%i==0){
-//             res++
-//         }
-//     }
-// if(res==2){
-// console.log(num+" prime")
-// return true
-// }else{
-// console.log(num+" Non-prime")
-//         return false
-//     }
-// }
+function isPrime(num){
+    var res = 0
+    for(var i = 1;i<=num;i++){
+        if(num%i==0){
+            res++
+        }
+    }
+if(res==2){
+console.log(num+" prime")
+return true
+}else{
+console.log(num+" Non-prime")
+        return false
+    }
+}
+console.log(isPrime(13))
 
 // var limit = 100
 
@@ -1997,7 +1998,7 @@ for(key in Object){
 //         }
 
 // }
-// console.log(arr
+// console.log(arr)
 
 // // find the Odd index in matrix ❗❗❗❗❗❗❗❗
 
