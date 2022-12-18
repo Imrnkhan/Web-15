@@ -516,3 +516,26 @@ let arr =   [ [ 1, 2, 3, 4 ],
             // https://oj.masaischool.com/contest/6045/problem/01
 
 
+            // String count frequency
+
+let str = "GeeeEEKKKss"
+for(let i =0;i<str.length;i++){
+    let count =1
+    while (i + 1 < str.length && str.charAt(i) == str.charAt(i + 1)){
+        i++;
+
+        count++;
+    }
+    console.log(str.charAt(i)+""+count)
+}
+    
+
+let arr = [1,2,3,4,1,2,35]
+for(let i =0;i<arr.length;i++){
+let count =  1
+while(i+1<arr.length && arr[i]==arr[i+1]){
+    count++
+    i++
+}
+console.log(arr[i]+"=>"+count)
+}
