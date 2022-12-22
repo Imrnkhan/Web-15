@@ -3835,21 +3835,6 @@ console.log(count)
 
 
 
-// Count frequency of each element in the array occurences
-
-
-let arr = [3,2,1,5,6,4,4,5,6]
-for(let i =0;i<arr.length;i++){
-    let count =1
-    for(let j =i+1;j<arr.length;j++){
-        if(arr[i]==arr[j]){
-            count++
-        }
-    }
-    console.log(arr[i]+" - "+count)
-}
-
-
 // unique 
 // count frequency 
 // majority

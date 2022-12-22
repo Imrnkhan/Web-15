@@ -504,12 +504,7 @@ let arr =   [ [ 1, 2, 3, 4 ],
 
 
 
-            // count frqequcny 
-
-
-            let arr = [1,3,4,5,6,77,3,4,5,5]
-            flag = false
-
+           
             
 
 
@@ -529,11 +524,13 @@ for(let i =0;i<str.length;i++){
     console.log(str.charAt(i)+""+count)
 }
     
+// Array count frequency of Element	
+
 
 let arr = [1,2,3,4,1,2,35]
 for(let i =0;i<arr.length;i++){
 let count =  1
-while(i+1<arr.length && arr[i]==arr[i+1]){
+while(i+1 < arr.length && arr[i]==arr[i+1]){
     count++
     i++
 }
