@@ -54,14 +54,14 @@ console.log(details)
 // }
 
 
-// var arr = [456,125,36,2,5,4,6,32,1]
-// arr.sort((a,b)=>b-a)
-// for(var i =0;i<arr.length;i++){
-//     if(arr[0]<arr[i]){
-//         arr[0]=arr[i]
-//     }
-// }
-// console.log(arr[0]);
+var arr = [456,125,36,2,5,4,6,32,1]
+arr.sort((a,b)=>b-a)
+for(var i =0;i<arr.length;i++){
+    if(arr[0]<arr[i]){
+        arr[0]=arr[i]
+    }
+}
+console.log(arr[0]);
 
 
 // var arr = [3, 5, 0, 9, 8]
@@ -536,3 +536,5 @@ while(i+1 < arr.length && arr[i]==arr[i+1]){
 }
 console.log(arr[i]+"=>"+count)
 }
+
+
