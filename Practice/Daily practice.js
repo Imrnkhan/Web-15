@@ -538,3 +538,73 @@ console.log(arr[i]+"=>"+count)
 }
 
 
+
+
+// duplicate and repeated number in Array 
+
+
+
+// public class Main {
+//     public static void main(String[] args) {
+//         //intial array
+//         int arr[] = {2, 4, 6, 4, 2, 4, 5, 8};
+//         int max_element = 8;
+        
+//         //declare an array of size max_element+1
+//         int count_arr[] = new int[max_element+1];
+        
+//         //loop through the original array and update the count
+//         for(int i=0; i<arr.length; i++){
+//             count_arr[arr[i]]++;
+//         }
+        
+//         //fetch the element having the max count
+//         int max_repeated = Integer.MIN_VALUE;
+//         int max_count = -1;
+//         for(int i=0; i<arr.length; i++){
+//             if(count_arr[arr[i]] > max_count){
+//                 max_count = count_arr[arr[i]];
+//                 max_repeated = arr[i];
+//             }
+//         }
+        
+//         System.out.println("Most repeated: "+max_repeated); 
+//     }
+// }
+
+
+
+
+
+// * This function prints the maximum occuring element of array */
+// void getMaxCountElement(int *array, int size) {
+//     int i, j, maxCount, maxElement, count;
+//     maxCount = INT_MIN;
+//     /* Count the frequency of every elemenet of array, 
+//     and check if it is greater than maximum count element 
+//     we found till now and update it accordingly  */
+//     for(i = 0; i< size; i++){
+//         count = 1;
+//         for(j = i+1; j < size; j++){
+//             if(array[j] == array[i]){
+//                 count++;
+//                 /* If count of current element is more than 
+//                 maxCount, uodate maxCount and maxElement */
+//                 if(count > maxCount){
+//                     maxCount = count;
+//                     maxElement = array[j];
+//                 }
+//             }
+//         }
+//     }
+//     printf("Maximum Repeating Element : %d\nCount : %d",
+//         maxElement, maxCount);
+// }
+  
+// int main() {
+//     int array[10] = {2, 4, 1 ,5, 6, 2, 4, 5, 4, 4};
+ 
+//     getMaxCountElement(array, 10);
+     
+//     return 0;
+// }
