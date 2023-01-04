@@ -2178,19 +2178,19 @@ for(var i =0;i<str.length;i++){
 
 // // missing interger ❗❗❗❗❗❗❗
 
-var arr = [5,3,4,1]
+// var arr = [9,6,4,2,3,5,7,0,1]
 
-arr.sort((a,b)=>a-b)
+// arr.sort((a,b)=>a-b)
 
-for(var i =0;i<arr.length;i++){
-    if(arr[i]!=i+1){
-        console.log(i+1)
-        break;
-    }
-}
+// for(var i =0;i<arr.length;i++){
+//     if(arr[i]!=i+1){
+//         console.log(i+1)
+//         break;
+//     }
+// }
 
 // other way  missing number
-let nums =[3,0,1]
+let nums =[9,6,4,2,3,5,7,0,1]
 let sum = 0
 let total = 0
 for(let i = 0; i < nums.length; i++) {
@@ -3485,7 +3485,13 @@ console.log(res); // count
 
 
     
+// kth smallest element
 
+let arr = [7 ,10, 4, 3, 20, 15]
+let k = 3
+
+arr.sort((a,b)=>b-a)
+console.log(arr[arr.length-k])
 
 	
 
@@ -3789,10 +3795,10 @@ console.log(arr)
 // Time Complexity = (O(N) + (N-K+1 Log N-K+1)) => O(NLogN)
 // Space Complexity = O(K+1) => O(K)
 
-let arr = [3,2,1,5,6,4]
+let arr = [3,2,1,7,6,4]
 let k = 2
 for(let i =0;i<k;i++){
-    for(let j =0;j<arr.length-i-1;j++){
+for(let j =0;j<arr.length-i-1;j++){
 if(arr[j]>arr[j+1]){
     let temp = arr[j]
     arr[j] = arr[j+1]

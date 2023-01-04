@@ -573,38 +573,60 @@ console.log(arr[i]+"=>"+count)
 // }
 
 
-
-
-
-// * This function prints the maximum occuring element of array */
-// void getMaxCountElement(int *array, int size) {
-//     int i, j, maxCount, maxElement, count;
-//     maxCount = INT_MIN;
-//     /* Count the frequency of every elemenet of array, 
-//     and check if it is greater than maximum count element 
-//     we found till now and update it accordingly  */
-//     for(i = 0; i< size; i++){
-//         count = 1;
-//         for(j = i+1; j < size; j++){
-//             if(array[j] == array[i]){
-//                 count++;
-//                 /* If count of current element is more than 
-//                 maxCount, uodate maxCount and maxElement */
-//                 if(count > maxCount){
-//                     maxCount = count;
-//                     maxElement = array[j];
-//                 }
-//             }
+// int Solution::kthsmallest(const vector<int> &A, int B) {
+//     priority_queue<int>q;
+//     for(int i=0;i<A.size();i++){
+//         q.push(A[i]);
+//         if(q.size()>B){
+//             q.pop();
 //         }
 //     }
-//     printf("Maximum Repeating Element : %d\nCount : %d",
-//         maxElement, maxCount);
+//     return q.top();
 // }
-  
-// int main() {
-//     int array[10] = {2, 4, 1 ,5, 6, 2, 4, 5, 4, 4};
- 
-//     getMaxCountElement(array, 10);
+
+
+
+// odd and even index sum 
+
+// let  arr = [1, 3, 2, 5, 4];
+let arr = [2 ,1 ,3 ,2 ,4]
+let even = 0;
+    let odd = 0;
+    for (let i = 0; i < arr.length; i++) {
      
-//     return 0;
-// }
+        // Loop to find even, odd sum
+        if (i % 2 == 0){
+
+            even += arr[i];
+        }
+        else{
+
+            odd += arr[i];
+        }
+    }
+    console.log(even+" "+odd)
+    console.log(even-odd)
+
+
+// palindrome 
+
+
+    let x = "121"
+        let num = x.toString().split('');
+          let str = num.reverse().join('');
+          if (x==str){
+            //   return true;
+            console.log("yes")
+          }else {
+            //   return false;
+            console.log("no")
+          }
+      
+
+
+
+        //   minimum number of steps.
+          let n = 32;
+          let count = Math.floor(n/5)
+
+          console.log(count+1);
