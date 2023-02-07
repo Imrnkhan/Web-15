@@ -305,6 +305,7 @@ console.log(str)
 // output = 5
 // find the largest arr in number
 var arr = [5,6,8,4,6,9]
+
 for(var i = 0;i<arr.length;i++){
     if(arr[0]<arr[i]){
         arr[0]=arr[i]
@@ -2178,16 +2179,16 @@ for(var i =0;i<str.length;i++){
 
 // // missing interger ❗❗❗❗❗❗❗
 
-// var arr = [9,6,4,2,3,5,7,0,1]
+var arr = [9,6,4,2,3,5,7,0,1]
 
-// arr.sort((a,b)=>a-b)
+arr.sort((a,b)=>a-b)
 
-// for(var i =0;i<arr.length;i++){
-//     if(arr[i]!=i+1){
-//         console.log(i+1)
-//         break;
-//     }
-// }
+for(var i =0;i<arr.length;i++){
+    if(arr[i]!=i+1){
+        console.log(i+1)
+        break;
+    }
+}
 
 // other way  missing number
 let nums =[9,6,4,2,3,5,7,0,1]
@@ -3470,7 +3471,7 @@ let arr = [10, 20, 11]
 
 // remove duplicate sorted array and unsoreted
 
-let arr = [1,2,5,4,6,3,5,7,5,2]
+let arr = [1,2,5,4,6,3,5,7,5,2,2]
 arr.sort((a,b)=>a-b)
 
 let res =0
@@ -3480,8 +3481,10 @@ for (let i = 0; i < arr.length; i++) {
     res++
    }
 }
-console.log(arr.slice(0,res))
+
+console.log(arr.slice(0,res))   //slice(start, end) (2,4) 2 se start and 4 end
 console.log(res); // count
+
 
 
     

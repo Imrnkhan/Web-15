@@ -630,3 +630,17 @@ let even = 0;
           let count = Math.floor(n/5)
 
           console.log(count+1);
+
+
+
+// https://www.techcrashcourse.com/2016/04/java-example-programs.html
+// https://www.javaguides.net/p/java-programs-for-beginners.html
+// https://oj.masaischool.com/contest/6676/problems
+https://www.tutorialcup.com/interview/string
+
+https://leetcode.com/submissions/#/20
+
+
+
+
+
