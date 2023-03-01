@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-.center {
-  margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Library Management App</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
 
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
 
-<div class="center">
-  <p>Hello World!</p>
-  
-</div>
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Library Management App</h1>
+    <table id="libraryTable">
+      <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Description</th>
+        <th>Added Date</th>
+        <th>Category</th>
+        <th>Price</th>
+      </tr>
+    </table>
+    <br><br>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <br><br>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author">
+      <br><br>
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description">
+      <br><br>
+      <label for="addedDate">Added Date:</label>
+      <input type="text" id="addedDate" name="addedDate">
+      <br><br>
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="category">
+      <br><br>
+      <label for="price">Price:</label>
+      <input type="text" id="price" name="price">
+      <br><br>
+      <button id="submitBtn">Submit</button>
+    </form>
 
-</body>
-</html>
+    <script>
+      const submitBtn = document.querySelector("#submitBtn");
+      const libraryTable = document.querySelector("#libraryTable");
+      let libraryData = [];
+
+      if (localStorage.getItem("libraryData")) {
+        libraryData = JSON.parse(localStorage.getItem("libraryData"));
+        renderTable();
+      }
+
+      submitBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        const name = document.querySelector("#name").value;
+        const author = document.querySelector("#author").value;
+        const description = document.querySelector("#description").value;
+        const addedDate = document.querySelector("#addedDate").value;
+        const category = document.querySelector("#category").value;
+        const price = document.querySelector("#price").value;
+
+        const newData = {
+          name,
+          author,
+          description,
+          addedDate,
+          category,
+          price
+        };
+
+        libraryData.push(newData);
+        localStorage.setItem("libraryData",

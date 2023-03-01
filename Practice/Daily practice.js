@@ -642,5 +642,20 @@ https://leetcode.com/submissions/#/20
 
 
 
+// linklist    
+// https://oj.masaischool.com/contest/3399/problems
+// https://oj.masaischool.com/contest/4181/problems
 
 
+
+
+
+
+let arr = [1,2,3,4,5];
+let ans = arr[0]
+for(let i=0;i<arr.length;i++){
+    if(arr[i]<arr[i+1]){
+        ans.push(arr[i])
+    }
+    console.log(ans)
+}
